@@ -44,34 +44,48 @@
         </ul>
       </div>
     </nav>
+  </header>
 
-    <div class="alertas">
+  <div class="main">
+    <div class="formulario ml-3 mr-3">
+      <h3>Realiza tu consulta y te contactamos.</h3>
       <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-
-          </select>
+        <div class="form-row mt-1">
+          <div class="col-5">
+            <input type="text" class="form-control" placeholder="Direccion">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Mail">
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder="Telefono">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-row mt-1">
+          <div class="col-3 my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <h4>Consultar por: </h4>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Seguro de...</option>
+              <option value="1">Vida</option>
+              <option value="2">Hogar</option>
+              <option value="3">Otros</option>
+            </select>
+          </div>
         </div>
       </form>
     </div>
 
-  </header>
+
+  </div>
 
   <!-- Jquery, popper, bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
