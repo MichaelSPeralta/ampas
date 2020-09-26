@@ -48,6 +48,7 @@ body {
     }
   }
   .section-1 {
+    display: flex;
     .image {
       display: flex;
       img {
@@ -56,12 +57,19 @@ body {
       }
       .first-text {
         position: absolute;
-        margin: 20px 0 0 10px;
+        margin: 5vw 0 0 5vw;
         padding-right: 250px;
+        letter-spacing: 2px;
+        line-height: 134.4%;
       }
     }
 
     .call-to-action {
+      position: absolute;
+      margin: 40vw 0 0 50vw;
+      padding-right: 10px;
+      text-align: right;
+      font-size: 14px;
       .text {
       }
       .button {
