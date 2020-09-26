@@ -9,6 +9,29 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+body button {
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid #000000;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 800;
+  font-family: "Fjalla One", sans-serif;
+  border-radius: 8px;
+  letter-spacing: 0.1em;
+}
+
+body button:hover {
+  -webkit-box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+body button:focus {
+  display: none;
+}
+
 body header {
   width: auto;
   height: auto;
@@ -77,16 +100,39 @@ body .section-1 .image img {
 body .section-1 .image .first-text {
   position: absolute;
   margin: 5% 0 0 5%;
-  padding-right: 250px;
+  padding-right: 150px;
   letter-spacing: 2px;
   line-height: 134.4%;
 }
 
 body .section-1 .call-to-action {
   position: absolute;
-  margin: 43% 0 0 45%;
+  margin: 40% 0 0 50%;
   padding-right: 10px;
   text-align: right;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+body .section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-2 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-2 .image img {
+  width: 100%;
+  height: auto;
+}
+
+body .section-2 .image .text {
+  position: absolute;
+  margin: 30% 0 0 5%;
+  padding-right: 55%;
 }
 /*# sourceMappingURL=style.css.map */
