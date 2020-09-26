@@ -7,51 +7,49 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  margin: 0 10px;
 }
 
 body header {
   margin-top: 5px;
   width: auto;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-body header .control-nav {
+body header .topnav {
+  overflow: hidden;
+}
+
+body header .topnav #myLinks {
+  display: none;
+}
+
+body header .topnav .icon {
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+body header .topnav .control-nav {
   text-transform: uppercase;
+  text-align: center;
 }
 
-body header .control-nav a {
+body header .topnav .control-nav a {
   text-decoration: none;
   color: black;
-  margin: 0 10px;
+  margin: 0 60px;
+  padding: 14px 16px;
+  display: block;
 }
 
-body header .control-nav a:link {
-  text-decoration: none;
-}
-
-body header .control-nav a:visited {
-  text-decoration: none;
-}
-
-body header .control-nav a:hover {
+body header .topnav .control-nav a:hover {
   border: 1px solid white;
   border-radius: 10px;
   background: #ffffff;
   -webkit-box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
           box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
   padding: 10px;
-}
-
-body header .control-nav a:active {
-  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

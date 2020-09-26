@@ -5,38 +5,40 @@
 }
 body {
   font-family: "Josefin Sans", sans-serif;
+  margin: 0 10px;
   header {
     margin-top: 5px;
     width: auto;
     height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .control-nav {
-      text-transform: uppercase;
-      a {
-        text-decoration: none;
+
+    .topnav {
+      overflow: hidden;
+      #myLinks {
+        display: none;
+      }
+      .icon {
         color: black;
-        margin: 0 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
       }
-      a:link {
-        text-decoration: none;
-      }
-
-      a:visited {
-        text-decoration: none;
-      }
-
-      a:hover {
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
-        padding: 10px;
-      }
-
-      a:active {
-        text-decoration: underline;
+      .control-nav {
+        text-transform: uppercase;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: black;
+          margin: 0 60px;
+          padding: 14px 16px;
+          display: block;
+        }
+        a:hover {
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 10px;
+          background: #ffffff;
+          box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
+          padding: 10px;
+        }
       }
     }
   }

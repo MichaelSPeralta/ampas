@@ -10,18 +10,24 @@
   <link rel="stylesheet" href="style.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>AM PAS</title>
 </head>
 
 <body>
   <header>
-    <div class="log"></div>
-    <div class="title"></div>
-    <div class="control-nav">
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Cotizar</a>
-      <a href="#">Contacto</a>
+    <div class="topnav">
+      <a href="#" class="active">Logo</a>
+      <div id="myLinks" class="control-nav">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Cotizar</a>
+        <a href="#">Contacto</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </header>
 </body>
