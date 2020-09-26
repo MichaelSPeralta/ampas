@@ -76,7 +76,7 @@ body .section-1 .image img {
 
 body .section-1 .image .first-text {
   position: absolute;
-  margin: 5vw 0 0 5vw;
+  margin: 5% 0 0 5%;
   padding-right: 250px;
   letter-spacing: 2px;
   line-height: 134.4%;
@@ -84,7 +84,7 @@ body .section-1 .image .first-text {
 
 body .section-1 .call-to-action {
   position: absolute;
-  margin: 40vw 0 0 50vw;
+  margin: 43% 0 0 45%;
   padding-right: 10px;
   text-align: right;
   font-size: 14px;
