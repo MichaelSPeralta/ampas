@@ -109,8 +109,80 @@ body {
       .text {
         position: absolute;
         margin: 30% 0 0 5%;
-        padding-right: 55%;
+        padding-right: 65%;
+        text-align: center;
       }
+    }
+  }
+
+  .section-3 {
+    display: flex;
+    .image {
+      display: flex;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .text {
+        position: absolute;
+        margin: 20% 0 0 5%;
+        padding-right: 75%;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .section-4 {
+    display: flex;
+    .image {
+      display: flex;
+      img {
+        opacity: 0.5;
+        width: 100%;
+        height: auto;
+      }
+      .call-to-action {
+        width: 150px;
+        position: absolute;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 15%;
+        .text {
+          //   padding-right: 0%;
+          text-align: center;
+          font-size: 20px;
+        }
+        .button {
+          width: 100px;
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 50px;
+    font-size: 11px;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 5px;
+    i {
+      color: #ffffff;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      //   margin: 10px;
+    }
+    .ic-st {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
     }
   }
 }

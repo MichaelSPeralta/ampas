@@ -133,6 +133,113 @@ body .section-2 .image img {
 body .section-2 .image .text {
   position: absolute;
   margin: 30% 0 0 5%;
-  padding-right: 55%;
+  padding-right: 65%;
+  text-align: center;
+}
+
+body .section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-3 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-3 .image img {
+  width: 100%;
+  height: auto;
+}
+
+body .section-3 .image .text {
+  position: absolute;
+  margin: 20% 0 0 5%;
+  padding-right: 75%;
+  text-align: center;
+  font-size: 12px;
+}
+
+body .section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-4 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-4 .image img {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+}
+
+body .section-4 .image .call-to-action {
+  width: 150px;
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 15%;
+}
+
+body .section-4 .image .call-to-action .text {
+  text-align: center;
+  font-size: 20px;
+}
+
+body .section-4 .image .call-to-action .button {
+  width: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+body footer {
+  height: 50px;
+  font-size: 11px;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 5px;
+}
+
+body footer i {
+  color: #ffffff;
+}
+
+body footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .ic-st {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */
