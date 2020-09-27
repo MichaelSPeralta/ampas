@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -293,6 +294,12 @@ body footer .ic-st {
   }
 }
 
+/*
+
+ACA TENEMOS QUE SACAR EL ICONO DEL MENÜ HAMBURGUESA Y ESTILAR EL MENÜ 
+COMO LA VISTA DE FIGMA.
+
+*/
 /* Medium devices (landscape tablets) */
 /* Large devices (laptops/desktops) */
 /* Extra large devices (large laptops and desktops) */
