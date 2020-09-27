@@ -12,7 +12,7 @@ body {
 body button {
   margin-top: 5px;
   background: rgba(255, 255, 255, 0.48);
-  border: 1px solid #000000;
+  border: 1px solid #00000074;
   padding: 5px 15px;
   text-transform: uppercase;
   font-size: 11px;
@@ -104,14 +104,14 @@ body .section-1 .image img {
 body .section-1 .image .first-text {
   position: absolute;
   margin: 5% 0 0 5%;
-  padding-right: 150px;
+  padding-right: 140px;
   letter-spacing: 2px;
   line-height: 134.4%;
 }
 
 body .section-1 .call-to-action {
   position: absolute;
-  margin: 40% 0 0 50%;
+  margin: 42% 2% 0 50%;
   padding-right: 10px;
   text-align: right;
   font-size: 13px;
@@ -136,7 +136,7 @@ body .section-2 .image img {
 
 body .section-2 .image .text {
   position: absolute;
-  margin: 30% 0 0 5%;
+  margin: 20% 0 0 5%;
   padding-right: 65%;
   text-align: center;
 }
@@ -160,8 +160,8 @@ body .section-3 .image img {
 
 body .section-3 .image .text {
   position: absolute;
-  margin: 20% 0 0 5%;
-  padding-right: 75%;
+  margin: 10% 0 0 5%;
+  padding-right: 70%;
   text-align: center;
   font-size: 12px;
 }
@@ -186,6 +186,19 @@ body .section-4 .image img {
 
 body .section-4 .image .call-to-action {
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   margin-left: 30%;
   margin-right: 30%;
@@ -198,9 +211,7 @@ body .section-4 .image .call-to-action .text {
 }
 
 body .section-4 .image .call-to-action .button {
-  width: 100px;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: auto;
 }
 
 body footer {
