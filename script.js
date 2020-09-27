@@ -1,3 +1,5 @@
+var x = document.getElementById("myLinks");
+
 function menuFunction() {
   var x = document.getElementById("myLinks");
   var a = document.getElementById("myHeader");

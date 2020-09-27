@@ -164,6 +164,14 @@ body {
     }
   }
 
+  .formulario {
+    .submit {
+      input {
+        display: none;
+      }
+    }
+  }
+
   footer {
     height: 40px;
     font-size: 11px;

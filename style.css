@@ -214,6 +214,10 @@ body .section-4 .image .call-to-action .button {
   width: auto;
 }
 
+body .formulario .submit input {
+  display: none;
+}
+
 body footer {
   height: 40px;
   font-size: 11px;
