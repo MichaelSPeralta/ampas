@@ -274,6 +274,25 @@ body footer .ic-st {
 }
 
 /* Small devices (portrait tablets and large phones) */
+@media only screen and (min-width: 425px) {
+  body .section-1 .image .first-text {
+    padding-right: 250px;
+  }
+  body .section-1 .call-to-action {
+    margin: 43% 5% 0 55%;
+  }
+  body .section-2 .image .text {
+    margin: 25% 0 0 5%;
+    padding-right: 70%;
+    font-size: 16px;
+  }
+  body .section-3 .image .text {
+    margin: 15% 0 0 5%;
+    padding-right: 75%;
+    font-size: 14px;
+  }
+}
+
 /* Medium devices (landscape tablets) */
 /* Large devices (laptops/desktops) */
 /* Extra large devices (large laptops and desktops) */
