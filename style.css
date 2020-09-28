@@ -30,7 +30,7 @@ body button:hover {
 }
 
 body button:focus {
-  display: none;
+  outline: none;
 }
 
 body header {
@@ -215,8 +215,33 @@ body .section-4 .image .call-to-action .button {
   width: auto;
 }
 
+body .formulario {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
 body .formulario .submit input {
   display: none;
+}
+
+body .formulario .submit .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .formulario .submit .close:hover,
+body .formulario .submit .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 body footer {

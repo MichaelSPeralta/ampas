@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Scripts -->
-  <script src="./script.js"></script>
   <!-- Style -->
   <link rel="stylesheet" href="style.css">
   <!-- Fonts -->
@@ -44,12 +42,12 @@
         <span>Contactá a tu productor asesor de seguros de confianza</span>
       </div>
       <div class="button">
-        <button>Contactar</button>
+        <button id="acc-btn-1" type="button">Contactar</button>
       </div>
     </div>
   </section>
 
-  <section class="section-2">
+  <section class=" section-2">
     <div class="image">
       <img src="./img/guy-key.jpg" alt="guy-with-key">
       <div class="text">
@@ -80,13 +78,14 @@
           <span>Seguros de vida, hogar, auto...</span>
         </div>
         <div class="button">
-          <button>Saber Mas</button>
+          <button id="acc-btn-2" type="button">Saber Mas</button>
         </div>
       </div>
     </div>
   </section>
-  <form action="action.php" method="POST">
-    <div class="formulario">
+  <form action="mail.php" method="POST">
+    <div id="myForm" class="formulario">
+      <span class="close">&times;</span>
       <p>Nombre</p>
       <input type="text" name="nombre">
       <p>Apellido</p>
@@ -124,5 +123,7 @@
     </div>
   </footer>
 </body>
+<!-- Scripts -->
+<script src="./script.js"></script>
 
 </html>
