@@ -16,15 +16,26 @@ document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("myForm");
   var span = document.getElementsByClassName("close")[0];
 
+  // Acciones con el formulario
+  // Abrir formulario con boton Contactar
   btn.addEventListener("click", function () {
     form.style.display = "block";
   });
 
+  // Abrir formulario con boton Saber Mas
   btn2.addEventListener("click", function () {
     form.style.display = "block";
   });
 
+  // Cerrar
   span.onclick = function () {
     form.style.display = "none";
+  };
+
+  // Cerrar presionando en cualquier lado fuera del form
+  window.onclick = function (event) {
+    if (event.target == form) {
+      form.style.display = "none";
+    }
   };
 });

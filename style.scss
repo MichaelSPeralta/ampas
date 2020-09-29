@@ -296,10 +296,9 @@ COMO LA VISTA DE FIGMA.
         margin: 43% 5% 0 55%;
         font-size: 24px;
         padding-right: 20px;
-        
       }
-      .button{
-        #acc-btn-1{
+      .button {
+        #acc-btn-1 {
           margin: 5% 0 0 50%;
           font-size: 15px;
         }
@@ -326,25 +325,23 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-4 {
-      #acc-btn-2{
-        margin: 20% 0 0 12%;
-        padding-left: 15%;
+      #acc-btn-2 {
+        margin: 20% 0 0 0%;
+        padding: 10px;
         font-size: 24px;
       }
       .image {
         .call-to-action {
           width: 300px;
-          .text{
-          margin: 10% 0% 0% 5%;
-          font-size: 30px;
-        }
-            
+          .text {
+            margin: 10% 0% 0% 5%;
+            font-size: 30px;
+          }
         }
       }
     }
   }
 }
-
 
 /* Large devices (laptops/desktops) */
 @media only screen and (min-width: 992px) {
@@ -362,10 +359,9 @@ COMO LA VISTA DE FIGMA.
         margin: 43% 5% 0 55%;
         font-size: 30px;
         padding-right: 40px;
-        
       }
-      .button{
-        #acc-btn-1{
+      .button {
+        #acc-btn-1 {
           margin: 5% 0 0 50%;
           font-size: 30px;
         }
@@ -392,7 +388,7 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-4 {
-      #acc-btn-2{
+      #acc-btn-2 {
         margin: 20% 0 0 12%;
         padding-left: 10%;
         font-size: 30px;
@@ -401,11 +397,10 @@ COMO LA VISTA DE FIGMA.
         .call-to-action {
           width: 350px;
           margin: 15% 0% 0% 32%;
-          .text{
-          margin: 10% 0% 0% 5%;
-          font-size: 50px;
-        }
-            
+          .text {
+            margin: 10% 0% 0% 5%;
+            font-size: 50px;
+          }
         }
       }
     }
@@ -429,8 +424,8 @@ COMO LA VISTA DE FIGMA.
         padding-right: 40px;
         font-size: 50px;
       }
-      .button{
-        #acc-btn-1{
+      .button {
+        #acc-btn-1 {
           margin: 5% 0 0 50%;
           font-size: 40px;
         }
@@ -457,7 +452,7 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-4 {
-      #acc-btn-2{
+      #acc-btn-2 {
         margin: 20% 0 0 12%;
         padding-left: 10%;
         font-size: 50px;
@@ -466,11 +461,10 @@ COMO LA VISTA DE FIGMA.
         .call-to-action {
           width: 800px;
           margin: 15% 0% 0% 21%;
-          .text{
-          margin: 10% 0% 0% 5%;
-          font-size: 80px;
-        }
-            
+          .text {
+            margin: 10% 0% 0% 5%;
+            font-size: 80px;
+          }
         }
       }
     }
