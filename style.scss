@@ -283,6 +283,32 @@ COMO LA VISTA DE FIGMA.
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 768px) {
   body {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #logo {
+        position: static;
+      }
+      .topnav {
+        width: 100%;
+        overflow: visible;
+        #myLinks {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin: 0;
+          a {
+            margin: 10px;
+          }
+        }
+        .icon {
+          i {
+            display: none;
+          }
+        }
+      }
+    }
     .section-1 {
       .image {
         .first-text {
@@ -346,6 +372,32 @@ COMO LA VISTA DE FIGMA.
 /* Large devices (laptops/desktops) */
 @media only screen and (min-width: 992px) {
   body {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #logo {
+        position: static;
+      }
+      .topnav {
+        width: 100%;
+        overflow: visible;
+        #myLinks {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin: 0;
+          a {
+            margin: 10px;
+          }
+        }
+        .icon {
+          i {
+            display: none;
+          }
+        }
+      }
+    }
     .section-1 {
       .image {
         .first-text {
@@ -389,8 +441,8 @@ COMO LA VISTA DE FIGMA.
     }
     .section-4 {
       #acc-btn-2 {
-        margin: 20% 0 0 12%;
-        padding-left: 10%;
+        margin: 20% 0 0 0%;
+        padding: 10px;
         font-size: 30px;
       }
       .image {
