@@ -326,6 +326,124 @@ COMO LA VISTA DE FIGMA.
 
 */
 /* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) {
+  body .section-1 .image .first-text {
+    margin: 5% 30% 0 5%;
+    padding-right: 250px;
+    font-size: 30px;
+  }
+  body .section-1 .call-to-action {
+    margin: 43% 5% 0 55%;
+    font-size: 24px;
+    padding-right: 20px;
+  }
+  body .section-1 .button #acc-btn-1 {
+    margin: 5% 0 0 50%;
+    font-size: 15px;
+  }
+  body .section-2 .image .text {
+    margin: 20% 0 0 5%;
+    padding-right: 70%;
+    font-size: 30px;
+  }
+  body .section-3 .image .text {
+    margin: 12% 0 0 2%;
+    padding-right: 75%;
+    font-size: 28px;
+  }
+  body .section-4 #acc-btn-2 {
+    margin: 20% 0 0 12%;
+    padding-left: 15%;
+    font-size: 24px;
+  }
+  body .section-4 .image .call-to-action {
+    width: 300px;
+  }
+  body .section-4 .image .call-to-action .text {
+    margin: 10% 0% 0% 5%;
+    font-size: 30px;
+  }
+}
+
 /* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) {
+  body .section-1 .image .first-text {
+    margin: 5% 30% 0 5%;
+    padding-right: 250px;
+    font-size: 60px;
+  }
+  body .section-1 .call-to-action {
+    margin: 43% 5% 0 55%;
+    font-size: 30px;
+    padding-right: 40px;
+  }
+  body .section-1 .button #acc-btn-1 {
+    margin: 5% 0 0 50%;
+    font-size: 30px;
+  }
+  body .section-2 .image .text {
+    margin: 23% 0 0 5%;
+    padding-right: 70%;
+    font-size: 38px;
+  }
+  body .section-3 .image .text {
+    margin: 12% 0 0 1%;
+    padding-right: 75%;
+    font-size: 38px;
+  }
+  body .section-4 #acc-btn-2 {
+    margin: 20% 0 0 12%;
+    padding-left: 10%;
+    font-size: 30px;
+  }
+  body .section-4 .image .call-to-action {
+    width: 350px;
+    margin: 15% 0% 0% 32%;
+  }
+  body .section-4 .image .call-to-action .text {
+    margin: 10% 0% 0% 5%;
+    font-size: 50px;
+  }
+}
+
 /* Extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1200px) {
+  body .section-1 .image .first-text {
+    margin: 5% 30% 0 5%;
+    padding-right: 250px;
+    font-size: 80px;
+  }
+  body .section-1 .call-to-action {
+    margin: 42% 5% 0 45%;
+    padding-right: 40px;
+    font-size: 50px;
+  }
+  body .section-1 .button #acc-btn-1 {
+    margin: 5% 0 0 50%;
+    font-size: 40px;
+  }
+  body .section-2 .image .text {
+    margin: 20% 0 0 5%;
+    padding-right: 70%;
+    font-size: 60px;
+  }
+  body .section-3 .image .text {
+    margin: 13% 0 0 1%;
+    padding-right: 75%;
+    font-size: 50px;
+  }
+  body .section-4 #acc-btn-2 {
+    margin: 20% 0 0 12%;
+    padding-left: 10%;
+    font-size: 50px;
+  }
+  body .section-4 .image .call-to-action {
+    width: 800px;
+    margin: 15% 0% 0% 21%;
+  }
+  body .section-4 .image .call-to-action .text {
+    margin: 10% 0% 0% 5%;
+    font-size: 80px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

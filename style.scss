@@ -282,12 +282,197 @@ COMO LA VISTA DE FIGMA.
 
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 768px) {
+  body {
+    .section-1 {
+      .image {
+        .first-text {
+          margin: 5% 30% 0 5%;
+          padding-right: 250px;
+          font-size: 30px;
+        }
+      }
+
+      .call-to-action {
+        margin: 43% 5% 0 55%;
+        font-size: 24px;
+        padding-right: 20px;
+        
+      }
+      .button{
+        #acc-btn-1{
+          margin: 5% 0 0 50%;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .section-2 {
+      .image {
+        .text {
+          margin: 20% 0 0 5%;
+          padding-right: 70%;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .section-3 {
+      .image {
+        .text {
+          margin: 12% 0 0 2%;
+          padding-right: 75%;
+          font-size: 28px;
+        }
+      }
+    }
+    .section-4 {
+      #acc-btn-2{
+        margin: 20% 0 0 12%;
+        padding-left: 15%;
+        font-size: 24px;
+      }
+      .image {
+        .call-to-action {
+          width: 300px;
+          .text{
+          margin: 10% 0% 0% 5%;
+          font-size: 30px;
+        }
+            
+        }
+      }
+    }
+  }
 }
+
 
 /* Large devices (laptops/desktops) */
 @media only screen and (min-width: 992px) {
+  body {
+    .section-1 {
+      .image {
+        .first-text {
+          margin: 5% 30% 0 5%;
+          padding-right: 250px;
+          font-size: 60px;
+        }
+      }
+
+      .call-to-action {
+        margin: 43% 5% 0 55%;
+        font-size: 30px;
+        padding-right: 40px;
+        
+      }
+      .button{
+        #acc-btn-1{
+          margin: 5% 0 0 50%;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .section-2 {
+      .image {
+        .text {
+          margin: 23% 0 0 5%;
+          padding-right: 70%;
+          font-size: 38px;
+        }
+      }
+    }
+
+    .section-3 {
+      .image {
+        .text {
+          margin: 12% 0 0 1%;
+          padding-right: 75%;
+          font-size: 38px;
+        }
+      }
+    }
+    .section-4 {
+      #acc-btn-2{
+        margin: 20% 0 0 12%;
+        padding-left: 10%;
+        font-size: 30px;
+      }
+      .image {
+        .call-to-action {
+          width: 350px;
+          margin: 15% 0% 0% 32%;
+          .text{
+          margin: 10% 0% 0% 5%;
+          font-size: 50px;
+        }
+            
+        }
+      }
+    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
+  body {
+    .section-1 {
+      .image {
+        .first-text {
+          margin: 5% 30% 0 5%;
+          padding-right: 250px;
+          font-size: 80px;
+        }
+      }
+
+      .call-to-action {
+        margin: 42% 5% 0 45%;
+        padding-right: 40px;
+        font-size: 50px;
+      }
+      .button{
+        #acc-btn-1{
+          margin: 5% 0 0 50%;
+          font-size: 40px;
+        }
+      }
+    }
+
+    .section-2 {
+      .image {
+        .text {
+          margin: 20% 0 0 5%;
+          padding-right: 70%;
+          font-size: 60px;
+        }
+      }
+    }
+
+    .section-3 {
+      .image {
+        .text {
+          margin: 13% 0 0 1%;
+          padding-right: 75%;
+          font-size: 50px;
+        }
+      }
+    }
+    .section-4 {
+      #acc-btn-2{
+        margin: 20% 0 0 12%;
+        padding-left: 10%;
+        font-size: 50px;
+      }
+      .image {
+        .call-to-action {
+          width: 800px;
+          margin: 15% 0% 0% 21%;
+          .text{
+          margin: 10% 0% 0% 5%;
+          font-size: 80px;
+        }
+            
+        }
+      }
+    }
+  }
 }
