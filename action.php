@@ -31,4 +31,4 @@ $ejecutarQuery = mysqli_query($conn,$agregarReg);
 header("location:index.html");
     }
 //Cerramos conexion a la base de datos.
-mysql_close($conn);
+mysqli_close($conn);
