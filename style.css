@@ -141,6 +141,7 @@ body header .topnav .control-nav a:hover {
 }
 
 body .section-1 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,43 +155,39 @@ body .section-1 .image {
 
 body .section-1 .image img {
   width: 100%;
-  height: auto;
 }
 
-body .section-1 .image .first-text {
-  width: 145px;
-  height: auto;
+body .section-1 .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
+}
+
+body .section-1 .content .first-text {
+  width: 145px;
+  height: 100%;
   margin: 1em 0 0 1em;
   letter-spacing: 2px;
   line-height: 134.4%;
-  -webkit-animation-name: rightAnim;
-          animation-name: rightAnim;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
-body .section-1 .call-to-action {
-  position: absolute;
-  margin: 10em 2% 0 12em;
-  padding-right: 10px;
+body .section-1 .content .call-to-action {
+  margin: 10em 1em 0 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   text-align: right;
   font-size: 13px;
 }
 
-body .section-1 .call-to-action .text {
+body .section-1 .content .call-to-action .text {
   width: 145px;
   height: auto;
   line-height: 120%;
   position: relative;
-  -webkit-animation-name: leftAnim;
-          animation-name: leftAnim;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 body .section-2 {
@@ -396,8 +393,8 @@ body footer .ic-st {
 
 /* Extra small devices */
 @media only screen and (min-width: 375px) {
-  body .section-1 .call-to-action {
-    margin: 12.5em 2% 0 15.5em;
+  body .section-1 .content .call-to-action {
+    margin: 12.5em 1em 0 3em;
     padding-right: 10px;
   }
   body .section-2 .image .text {
@@ -417,16 +414,16 @@ body footer .ic-st {
 
 /* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 425px) {
-  body .section-1 .image .first-text {
+  body .section-1 .content .first-text {
     width: 165px;
     font-size: 18px;
   }
-  body .section-1 .call-to-action {
-    margin: 12em 0 0 14.5em;
+  body .section-1 .content .call-to-action {
+    margin: 12em 0 0 0;
     padding-right: 10px;
     font-size: 15px;
   }
-  body .section-1 .call-to-action .text {
+  body .section-1 .content .call-to-action .text {
     width: 180px;
   }
   body .section-2 .image .text {
@@ -522,17 +519,17 @@ COMO LA VISTA DE FIGMA.
   body #myHeader .topnav .icon i {
     display: none;
   }
-  body .section-1 .image .first-text {
+  body .section-1 .content .first-text {
     width: 260px;
     margin: 1em 2em 0 1em;
     font-size: 32px;
   }
-  body .section-1 .call-to-action {
-    margin: 14em 0 0 19em;
+  body .section-1 .content .call-to-action {
+    margin: 14em 0 0 0;
     font-size: 24px;
-    padding: 0;
+    padding: 0 0.5em;
   }
-  body .section-1 .call-to-action .text {
+  body .section-1 .content .call-to-action .text {
     width: 250px;
     font-size: 19.2px;
     margin: 0;
@@ -592,6 +589,7 @@ COMO LA VISTA DE FIGMA.
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 20px;
   }
   body #myHeader .topnav {
     width: 100%;
@@ -636,17 +634,17 @@ COMO LA VISTA DE FIGMA.
   body #myHeader .topnav .icon i {
     display: none;
   }
-  body .section-1 .image .first-text {
+  body .section-1 .content .first-text {
     width: 260px;
     margin: 1em 2em 0 1em;
     font-size: 40px;
   }
-  body .section-1 .call-to-action {
-    margin: 19em 0 0 25em;
+  body .section-1 .content .call-to-action {
+    margin: 18em 0 0 0;
     font-size: 24px;
     padding: 0;
   }
-  body .section-1 .call-to-action .text {
+  body .section-1 .content .call-to-action .text {
     width: 350px;
     font-size: 24px;
     margin: 0;
@@ -682,42 +680,157 @@ COMO LA VISTA DE FIGMA.
 
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
-  body .section-1 .image .first-text {
-    margin: 5% 30% 0 5%;
-    padding-right: 250px;
-    font-size: 80px;
+  body #myHeader {
+    font-size: 24px;
   }
-  body .section-1 .call-to-action {
-    margin: 42% 5% 0 45%;
-    padding-right: 40px;
-    font-size: 50px;
+  body button {
+    font-size: 28.8px;
   }
-  body .section-1 .button #acc-btn-1 {
-    margin: 5% 0 0 50%;
-    font-size: 40px;
+  body .section-1 .content .first-text {
+    width: 450px;
+    margin: 1em 2em 0 1em;
+    font-size: 48px;
+  }
+  body .section-1 .content .call-to-action {
+    margin: 22em 0 0 0;
+    font-size: 24px;
+    padding: 0 1em;
+  }
+  body .section-1 .content .call-to-action .text {
+    width: 350px;
+    font-size: 28.8px;
+    margin: 0;
   }
   body .section-2 .image .text {
-    margin: 20% 0 0 5%;
-    padding-right: 70%;
-    font-size: 60px;
+    width: 200px;
+    font-size: 36px;
   }
   body .section-3 .image .text {
-    margin: 13% 0 0 1%;
-    padding-right: 75%;
-    font-size: 50px;
+    width: 350px;
+    margin: 17em 0 0 1em;
+    font-size: 36px;
   }
   body .section-4 #acc-btn-2 {
-    margin: 20% 0 0 12%;
-    padding-left: 10%;
-    font-size: 50px;
+    margin: 20% 0 0 0%;
+    padding: 10px;
+    font-size: 24px;
   }
   body .section-4 .image .call-to-action {
-    width: 800px;
-    margin: 15% 0% 0% 21%;
+    width: 300px;
   }
   body .section-4 .image .call-to-action .text {
     margin: 10% 0% 0% 5%;
-    font-size: 80px;
+    font-size: 30px;
+  }
+  body footer .icons .ic-st {
+    font-size: 28.8px;
+  }
+  body footer .icons .ic-st i {
+    font-size: 48px;
+  }
+}
+
+/* Extra extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1440px) {
+  body #myHeader {
+    font-size: 28px;
+  }
+  body button {
+    font-size: 33.6px;
+  }
+  body .section-1 .content .first-text {
+    width: 450px;
+    margin: 1em 2em 0 1em;
+    font-size: 56px;
+  }
+  body .section-1 .content .call-to-action {
+    margin: 22em 0 0 0;
+    font-size: 28px;
+    padding: 0 1em;
+  }
+  body .section-1 .content .call-to-action .text {
+    width: 400px;
+    font-size: 33.6px;
+    margin: 0;
+  }
+  body .section-2 .image .text {
+    width: 200px;
+    font-size: 42px;
+  }
+  body .section-3 .image .text {
+    width: 400px;
+    margin: 17em 0 0 1em;
+    font-size: 42px;
+  }
+  body .section-4 #acc-btn-2 {
+    margin: 20% 0 0 0%;
+    padding: 10px;
+    font-size: 24px;
+  }
+  body .section-4 .image .call-to-action {
+    width: 300px;
+  }
+  body .section-4 .image .call-to-action .text {
+    margin: 10% 0% 0% 5%;
+    font-size: 30px;
+  }
+  body footer .icons .ic-st {
+    font-size: 33.6px;
+  }
+  body footer .icons .ic-st i {
+    font-size: 56px;
+  }
+}
+
+/* Extra extra extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1440px) {
+  body #myHeader {
+    font-size: 30px;
+  }
+  body button {
+    font-size: 36px;
+  }
+  body .section-1 .content .first-text {
+    width: 450px;
+    margin: 1em 2em 0 1em;
+    font-size: 60px;
+  }
+  body .section-1 .content .call-to-action {
+    margin: 28em 0 0 0;
+    font-size: 30px;
+    padding: 0 1em;
+  }
+  body .section-1 .content .call-to-action .text {
+    width: 400px;
+    font-size: 36px;
+    margin: 0;
+  }
+  body .section-2 .image .text {
+    width: 200px;
+    font-size: 45px;
+  }
+  body .section-3 .image .text {
+    width: 500px;
+    margin: 20em 0 0 1em;
+    font-size: 45px;
+  }
+  body .section-4 #acc-btn-2 {
+    margin: 20% 0 0 0%;
+    padding: 10px;
+    font-size: 24px;
+  }
+  body .section-4 .image .call-to-action {
+    width: 300px;
+  }
+  body .section-4 .image .call-to-action .text {
+    margin: 10% 0% 0% 5%;
+    font-size: 30px;
+  }
+  body footer .icons .ic-st {
+    font-size: 30px;
+  }
+  body footer .icons .ic-st i {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

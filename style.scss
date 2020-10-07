@@ -11,9 +11,11 @@ $font-Mobile-M: 14px;
 $font-Mobile-L: 15px;
 $font-Tablet: 16px;
 $font-Laptop: 20px;
+$font-Laptop-L: 24px;
+$font-Laptop-XL: 28px;
+$font-Laptop-XXL: 30px;
 
 // Animaciones
-
 @keyframes rightAnim {
   0% {
     left: 200%;
@@ -113,41 +115,49 @@ body {
     }
   }
   .section-1 {
+    width: 100%;
     display: flex;
     .image {
       display: flex;
-
       img {
         width: 100%;
-        height: auto;
+        // height: auto;
       }
+    }
+    .content {
+      width: 100%;
+      // height: 50%;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      // align-items: center;
+
       .first-text {
         width: 145px;
-        height: auto;
-        position: absolute;
+        height: 100%;
         margin: 1em 0 0 1em;
         letter-spacing: 2px;
         line-height: 134.4%;
-        animation-name: rightAnim;
-        animation-duration: 2.5s;
-        animation-timing-function: ease;
+        // animation-name: rightAnim;
+        // animation-duration: 2.5s;
+        // animation-timing-function: ease;
       }
-    }
-
-    .call-to-action {
-      position: absolute;
-      margin: 10em 2% 0 12em;
-      padding-right: 10px;
-      text-align: right;
-      font-size: $font-Mobile-S;
-      .text {
-        width: 145px;
-        height: auto;
-        line-height: 120%;
-        position: relative;
-        animation-name: leftAnim;
-        animation-duration: 3.5s;
-        animation-timing-function: ease-out;
+      .call-to-action {
+        // position: absolute;
+        margin: 10em 1em 0 0;
+        // padding-right: 10px;
+        align-self: flex-end;
+        text-align: right;
+        font-size: $font-Mobile-S;
+        .text {
+          width: 145px;
+          height: auto;
+          line-height: 120%;
+          position: relative;
+          // animation-name: leftAnim;
+          // animation-duration: 3.5s;
+          // animation-timing-function: ease-out;
+        }
       }
     }
   }
@@ -295,9 +305,11 @@ body {
 @media only screen and (min-width: 375px) {
   body {
     .section-1 {
-      .call-to-action {
-        margin: 12.5em 2% 0 15.5em;
-        padding-right: 10px;
+      .content {
+        .call-to-action {
+          margin: 12.5em 1em 0 3em;
+          padding-right: 10px;
+        }
       }
     }
     .section-2 {
@@ -332,18 +344,18 @@ body {
 @media only screen and (min-width: 425px) {
   body {
     .section-1 {
-      .image {
+      .content {
         .first-text {
           width: 165px;
           font-size: $font-Mobile-L + 3px;
         }
-      }
-      .call-to-action {
-        margin: 12em 0 0 14.5em;
-        padding-right: 10px;
-        font-size: $font-Mobile-L;
-        .text {
-          width: 180px;
+        .call-to-action {
+          margin: 12em 0 0 0;
+          padding-right: 10px;
+          font-size: $font-Mobile-L;
+          .text {
+            width: 180px;
+          }
         }
       }
     }
@@ -443,22 +455,21 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-1 {
-      .image {
+      .content {
         .first-text {
           width: 260px;
           margin: 1em 2em 0 1em;
           font-size: $font-Tablet * 2;
         }
-      }
-
-      .call-to-action {
-        margin: 14em 0 0 19em;
-        font-size: 24px;
-        padding: 0;
-        .text {
-          width: 250px;
-          font-size: $font-Tablet * 1.2;
-          margin: 0;
+        .call-to-action {
+          margin: 14em 0 0 0;
+          font-size: 24px;
+          padding: 0 0.5em;
+          .text {
+            width: 250px;
+            font-size: $font-Tablet * 1.2;
+            margin: 0;
+          }
         }
       }
     }
@@ -531,6 +542,7 @@ COMO LA VISTA DE FIGMA.
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: $font-Laptop;
       .topnav {
         width: 100%;
         height: 100%;
@@ -566,22 +578,21 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-1 {
-      .image {
+      .content {
         .first-text {
           width: 260px;
           margin: 1em 2em 0 1em;
           font-size: $font-Laptop * 2;
         }
-      }
-
-      .call-to-action {
-        margin: 19em 0 0 25em;
-        font-size: 24px;
-        padding: 0;
-        .text {
-          width: 350px;
-          font-size: $font-Laptop * 1.2;
-          margin: 0;
+        .call-to-action {
+          margin: 18em 0 0 0;
+          font-size: 24px;
+          padding: 0;
+          .text {
+            width: 350px;
+            font-size: $font-Laptop * 1.2;
+            margin: 0;
+          }
         }
       }
     }
@@ -636,24 +647,28 @@ COMO LA VISTA DE FIGMA.
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
   body {
+    #myHeader {
+      font-size: $font-Laptop-L;
+    }
+    button {
+      font-size: $font-Laptop-L * 1.2;
+    }
     .section-1 {
-      .image {
+      .content {
         .first-text {
-          margin: 5% 30% 0 5%;
-          padding-right: 250px;
-          font-size: 80px;
+          width: 450px;
+          margin: 1em 2em 0 1em;
+          font-size: $font-Laptop-L * 2;
         }
-      }
-
-      .call-to-action {
-        margin: 42% 5% 0 45%;
-        padding-right: 40px;
-        font-size: 50px;
-      }
-      .button {
-        #acc-btn-1 {
-          margin: 5% 0 0 50%;
-          font-size: 40px;
+        .call-to-action {
+          margin: 22em 0 0 0;
+          font-size: 24px;
+          padding: 0 1em;
+          .text {
+            width: 350px;
+            font-size: $font-Laptop-L * 1.2;
+            margin: 0;
+          }
         }
       }
     }
@@ -661,9 +676,8 @@ COMO LA VISTA DE FIGMA.
     .section-2 {
       .image {
         .text {
-          margin: 20% 0 0 5%;
-          padding-right: 70%;
-          font-size: 60px;
+          width: 200px;
+          font-size: $font-Laptop-L * 1.5;
         }
       }
     }
@@ -671,25 +685,188 @@ COMO LA VISTA DE FIGMA.
     .section-3 {
       .image {
         .text {
-          margin: 13% 0 0 1%;
-          padding-right: 75%;
-          font-size: 50px;
+          width: 350px;
+          margin: 17em 0 0 1em;
+          font-size: $font-Laptop-L * 1.5;
         }
       }
     }
     .section-4 {
       #acc-btn-2 {
-        margin: 20% 0 0 12%;
-        padding-left: 10%;
-        font-size: 50px;
+        margin: 20% 0 0 0%;
+        padding: 10px;
+        font-size: 24px;
       }
       .image {
         .call-to-action {
-          width: 800px;
-          margin: 15% 0% 0% 21%;
+          width: 300px;
           .text {
             margin: 10% 0% 0% 5%;
-            font-size: 80px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    footer {
+      .icons {
+        .ic-st {
+          font-size: $font-Laptop-L * 1.2;
+          i {
+            font-size: $font-Laptop-L * 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1440px) {
+  body {
+    #myHeader {
+      font-size: $font-Laptop-XL;
+    }
+    button {
+      font-size: $font-Laptop-XL * 1.2;
+    }
+    .section-1 {
+      .content {
+        .first-text {
+          width: 450px;
+          margin: 1em 2em 0 1em;
+          font-size: $font-Laptop-XL * 2;
+        }
+        .call-to-action {
+          // width: 400px;
+          margin: 22em 0 0 0;
+          font-size: $font-Laptop-XL;
+          padding: 0 1em;
+          .text {
+            width: 400px;
+            font-size: $font-Laptop-XL * 1.2;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .section-2 {
+      .image {
+        .text {
+          width: 200px;
+          font-size: $font-Laptop-XL * 1.5;
+        }
+      }
+    }
+
+    .section-3 {
+      .image {
+        .text {
+          width: 400px;
+          margin: 17em 0 0 1em;
+          font-size: $font-Laptop-XL * 1.5;
+        }
+      }
+    }
+    .section-4 {
+      #acc-btn-2 {
+        margin: 20% 0 0 0%;
+        padding: 10px;
+        font-size: 24px;
+      }
+      .image {
+        .call-to-action {
+          width: 300px;
+          .text {
+            margin: 10% 0% 0% 5%;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    footer {
+      .icons {
+        .ic-st {
+          font-size: $font-Laptop-XL * 1.2;
+          i {
+            font-size: $font-Laptop-XL * 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra extra extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1440px) {
+  body {
+    #myHeader {
+      font-size: $font-Laptop-XXL;
+    }
+    button {
+      font-size: $font-Laptop-XXL * 1.2;
+    }
+    .section-1 {
+      .content {
+        .first-text {
+          width: 450px;
+          margin: 1em 2em 0 1em;
+          font-size: $font-Laptop-XXL * 2;
+        }
+        .call-to-action {
+          // width: 400px;
+          margin: 28em 0 0 0;
+          font-size: $font-Laptop-XXL;
+          padding: 0 1em;
+          .text {
+            width: 400px;
+            font-size: $font-Laptop-XXL * 1.2;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .section-2 {
+      .image {
+        .text {
+          width: 200px;
+          font-size: $font-Laptop-XXL * 1.5;
+        }
+      }
+    }
+
+    .section-3 {
+      .image {
+        .text {
+          width: 500px;
+          margin: 20em 0 0 1em;
+          font-size: $font-Laptop-XXL * 1.5;
+        }
+      }
+    }
+    .section-4 {
+      #acc-btn-2 {
+        margin: 20% 0 0 0%;
+        padding: 10px;
+        font-size: 24px;
+      }
+      .image {
+        .call-to-action {
+          width: 300px;
+          .text {
+            margin: 10% 0% 0% 5%;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    footer {
+      .icons {
+        .ic-st {
+          font-size: $font-Laptop-XXL;
+          i {
+            font-size: $font-Laptop-XXL;
           }
         }
       }
