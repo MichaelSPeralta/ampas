@@ -28,7 +28,7 @@ $seguro = $_POST["seg"];
 $agregarReg = "INSERT INTO formulario (nombre,apellido,numero,email,seguro) VALUES ('$nombre','$apellido','$numero','$email','$seguro')";
 
 //Comprobamos datos enviadosa la bd
-if ($_POST["registrar"]){
+if ($_POST["nom"]){
     if (!$conn) {
     die("Error con la conexion del servidor: " . mysqli_connect_error());
     echo "No se puede conectar";
