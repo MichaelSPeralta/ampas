@@ -33,25 +33,20 @@ window.onclick = function(event) {
   }
 }
 
+ $('#my-Form').submit(function(e){
+   const datos = {
+     nom: $('#nom').val(),
+     ape: $('#ape').val(),
+     num: $('#num').val(),
+     mail: $('#mail').val(),
+     seg: $('#seg').val(),
+     nota: $('#nota').val()
+   };
 
-$('#my-Form').submit(function(e){
-  const datos = {
-    nom: $('#nombre').val(),
-    ape: $('#apellido').val(),
-    num: $('#numero').val(),
-    mail: $('#email').val(),
-    seg: $('#seguro').val()
+   $.post("https://test-am-seguro.000webhostapp.com/action.php", datos, function(respuesta){
+     console.log(respuesta);
 
-
-
-  };
-
-  $.post("http://localhost/ampas/action.php", datos, function(respuesta){
-    console.log(respuesta);
-
-  }); 
-  e.preventDefault();
-
-});
-
-
+   }); 
+   e.preventDefault();
+  
+ });
