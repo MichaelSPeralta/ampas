@@ -45,7 +45,7 @@
         <span>Contactá a tu productor asesor de seguros de confianza</span>
       </div>
       <div class="button">
-        <button id="acc-btn-1" type="button" a href="#my-Form">Contactar</button>
+        <button id="acc-btn-1" type="button"><a href="#my-Form">Contactar</a></button>
       </div>
     </div>
   </section>
@@ -84,16 +84,17 @@
     </div>
   </section>
   <form class="my-Form" id="my-Form" method="POST">
+    <div class="form">
       <div class="tit-form">
         <h2>Formulario de Contacto</h2>
       </div>
       <div class="form-content">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-        <input type="text" id="numero" name="numero" placeholder="Numero">
-        <input type="text" id="email" name="email" placeholder="Email">
-        <input type="text" id="seguro" name="seguro" placeholder="Tipo de seguro">
-        <input type="text" name="nota" id="nota" placeholder="Nota sobre alguna observacion">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+        <input type="text" id="numero" name="numero" placeholder="Nº de telefono:">
+        <input type="text" id="email" name="email" placeholder="Direccion de correo:">
+        <input type="text" id="seguro" name="seguro" placeholder="Consulta sobre seguro de:">
+        <textarea type="text" name="nota" id="nota" placeholder="Notas sobre alguna observacion:"></textarea>
         <div class="submit">
             <input id="btn-form" type="submit" name="registrar" value="Enviar consulta"> 
         </div>
@@ -104,11 +105,12 @@
         <div class="modal-content">
           <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Su consulta ha sido enviada</h2>
+            <h2>Lo contactaremos a la brevedad.</h2>
           </div>
         </div>
       
       </div>
+    </div>
   </form>
   
 
