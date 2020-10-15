@@ -134,6 +134,7 @@ body {
       // top: 10px;
       z-index: 5;
       .first-text {
+        position: relative;
         width: 145px;
         height: auto;
         margin: 1em 0 0 1em;
@@ -162,7 +163,7 @@ body {
         text-align: right;
         // margin: 0 0 0 0.5em;
         // padding: 5% 0 0 15%;
-        // position: relative;
+        position: relative;
         animation-name: leftAnim;
         animation-duration: 3.5s;
         animation-timing-function: ease-out;
