@@ -9,13 +9,11 @@
 $font-Mobile-S: 13px;
 $font-Mobile-M: 14px;
 $font-Mobile-L: 15px;
-$font-Tablet: 16px;
+$font-Tablet: 18px;
 $font-Laptop: 20px;
-$font-Laptop-L: 24px;
-$font-Laptop-XL: 28px;
-$font-Laptop-XXL: 30px;
 
 // Animaciones
+
 @keyframes rightAnim {
   0% {
     left: 200%;
@@ -50,7 +48,7 @@ body {
     border: 1px solid #00000074;
     padding: 5px 15px;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 800;
     font-family: "Fjalla One", sans-serif;
     border-radius: 8px;
@@ -115,49 +113,61 @@ body {
     }
   }
   .section-1 {
-    width: 100%;
     display: flex;
+    position: relative;
     .image {
       display: flex;
       img {
         width: 100%;
-        // height: auto;
+        height: auto;
       }
     }
     .content {
-      width: 100%;
-      // height: 50%;
-      display: flex;
-      justify-content: space-around;
       position: absolute;
-      // align-items: center;
-
+      width: 100%;
+      height: 100%;
+      display: flex;
+      // top: 10px;
+      z-index: 5;
       .first-text {
         width: 145px;
-        height: 100%;
+        height: auto;
         margin: 1em 0 0 1em;
         letter-spacing: 2px;
         line-height: 134.4%;
-        // animation-name: rightAnim;
-        // animation-duration: 2.5s;
-        // animation-timing-function: ease;
+        animation-name: rightAnim;
+        animation-duration: 2.5s;
+        animation-timing-function: ease;
       }
-      .call-to-action {
-        // position: absolute;
-        margin: 10em 1em 0 0;
-        // padding-right: 10px;
-        align-self: flex-end;
+    }
+    .call-to-action {
+      width: 100%;
+      height: 100%;
+      // position: absolute;
+      display: flex;
+      // align-items: baseline;
+      justify-content: flex-end;
+      flex-direction: column;
+      // margin: 20% 2% 0 95%;
+      padding: 0 5% 2% 0;
+      font-size: $font-Mobile-S;
+      .text {
+        width: 100%;
+        height: auto;
+        line-height: 120%;
         text-align: right;
-        font-size: $font-Mobile-S;
-        .text {
-          width: 145px;
-          height: auto;
-          line-height: 120%;
-          position: relative;
-          // animation-name: leftAnim;
-          // animation-duration: 3.5s;
-          // animation-timing-function: ease-out;
-        }
+        // margin: 0 0 0 0.5em;
+        // padding: 5% 0 0 15%;
+        // position: relative;
+        animation-name: leftAnim;
+        animation-duration: 3.5s;
+        animation-timing-function: ease-out;
+        // span {
+        //   width: 134px;
+        // }
+      }
+      .button {
+        align-self: flex-end;
       }
     }
   }
@@ -184,6 +194,7 @@ body {
 
   .section-3 {
     display: flex;
+    position: relative;
     .image {
       display: flex;
       img {
@@ -191,19 +202,24 @@ body {
         height: auto;
       }
       .text {
+        align-self: flex-end;
         width: 150px;
-        height: auto;
+        height: 30%;
         position: absolute;
-        margin: 12em 0 0 1em;
+        // margin: 12em 0 0 1em;
         text-align: center;
         font-size: $font-Mobile-S;
         line-height: 134.4%;
+        padding: 0.5em;
       }
     }
   }
 
   .section-4 {
     display: flex;
+    position: relative;
+    width: auto;
+    height: 120%;
     .image {
       display: flex;
       img {
@@ -211,110 +227,226 @@ body {
         width: 100%;
         height: auto;
       }
-      .call-to-action {
-        width: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 15%;
-        .text {
-          text-align: center;
-          font-size: 20px;
-        }
-        .button {
-          width: auto;
-        }
+    }
+    .about-me {
+      padding: 1em;
+      position: absolute;
+      height: 100%;
+      padding: 0 1em;
+      p {
+        font-size: $font-Mobile-S;
       }
+      // text-align: center;
     }
   }
+}
+.my-Form {
+  background-color: #f2f3eb;
+  padding: 1em;
+}
+.form {
+  border: #000 1px solid;
 
-  .formulario {
-    display: none;
-    position: fixed;
-    z-index: 5;
-    top: 7em;
-    left: 7em;
-    right: 7em;
-    width: 70%;
-    height: 70%;
+  .tit-form {
+    background-color: #f2f3eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+  }
+  .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 100%;
 
-    overflow: hidden;
-    background-color: #ffffffdc;
-    .form-content {
+    .submit {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       width: 100%;
-      margin: 25% 0;
-      input {
-        margin-bottom: 10px;
-      }
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
     }
-    .submit {
-      input {
-        display: none;
-      }
+    input {
+      font-family: "Josefin Sans", sans-serif;
+      margin-bottom: 10px;
+      width: 60%;
+      height: 2.5em;
+      background-color: #f2f3eb;
+      border: #aaa 0.5px;
+      border-bottom: #000 2px solid;
+    }
+    input::placeholder {
+      font-size: 1.5em;
+    }
+    input:focus {
+      outline: none;
+    }
+    textarea {
+      font-family: "Josefin Sans", sans-serif;
+      margin-bottom: 10px;
+      width: 60%;
+      background-color: #f2f3eb;
+      border: #aaa 0.5px;
+      border-bottom: #000 2px solid;
+    }
+    textarea::placeholder {
+      font-size: 1.5em;
+    }
+    textarea:focus {
+      outline: none;
     }
   }
+  #nota {
+    height: 10em;
+  }
+  #btn-form {
+    font-family: "Josefin Sans", sans-serif;
+    width: 45%;
+    background-color: #f2f3eb;
+    border: #000 2px solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
 
-  footer {
-    width: 100%;
-    height: auto;
-    font-size: 11px;
-    background-color: black;
+    margin: 0.4em 0.2em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  #btn-form:hover {
+    background-color: rgb(78, 78, 78);
+    color: #f2f3eb;
+    font-weight: bold;
+    opacity: 1;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal {
+  display: none;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Animacion */
+@-webkit-keyframes animatetop {
+  from {
+    top: -30%;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -30%;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Boton de cierre */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  background-color: #5cb85c;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 10px;
+  i {
     color: #ffffff;
-    padding: 10px 5px;
-    i {
-      color: #ffffff;
-      padding-right: 5px;
-    }
-    .icons {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-    .ic-st {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-    }
+    padding-right: 5px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .ic-st {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 /* Extra small devices */
 @media only screen and (min-width: 375px) {
   body {
+    button {
+      font-size: $font-Mobile-M;
+    }
     .section-1 {
       .content {
+        .first-text {
+          font-size: $font-Mobile-M + 2px;
+        }
         .call-to-action {
-          margin: 12.5em 1em 0 3em;
-          padding-right: 10px;
+          // margin: 12.5em 2% 0 15.5em;
+          .text {
+            font-size: $font-Mobile-M;
+          }
+          padding: 0 8.5% 4% 0;
         }
       }
     }
     .section-2 {
       .image {
         .text {
+          font-size: $font-Mobile-M;
           margin: 5em 0 0 1em;
         }
       }
@@ -322,19 +454,23 @@ body {
     .section-3 {
       .image {
         .text {
+          span {
+            font-size: $font-Mobile-M;
+          }
           margin: 13em 0 0 1em;
+        }
+      }
+    }
+    .section-4 {
+      .about-me {
+        p {
           font-size: $font-Mobile-M;
         }
       }
     }
     footer {
       .icons {
-        .ic-st {
-          font-size: $font-Mobile-M;
-          i {
-            font-size: $font-Mobile-M;
-          }
-        }
+        font-size: $font-Mobile-M;
       }
     }
   }
@@ -343,18 +479,20 @@ body {
 /* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 425px) {
   body {
+    button {
+      font-size: $font-Mobile-L;
+    }
     .section-1 {
       .content {
         .first-text {
-          width: 165px;
           font-size: $font-Mobile-L + 3px;
+          width: 100%;
         }
+      }
+      .content {
         .call-to-action {
-          margin: 12em 0 0 0;
-          padding-right: 10px;
-          font-size: $font-Mobile-L;
           .text {
-            width: 180px;
+            font-size: $font-Mobile-L;
           }
         }
       }
@@ -374,6 +512,15 @@ body {
         .text {
           width: 170px;
           margin: 14em 0 0 1em;
+          span {
+            font-size: $font-Mobile-L;
+          }
+        }
+      }
+    }
+    .section-4 {
+      .about-me {
+        p {
           font-size: $font-Mobile-L;
         }
       }
@@ -455,21 +602,22 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-1 {
-      .content {
+      .image {
         .first-text {
-          width: 260px;
+          font-size: $font-Tablet + 10px;
+          // width: 260px;
           margin: 1em 2em 0 1em;
-          font-size: $font-Tablet * 2;
         }
-        .call-to-action {
-          margin: 14em 0 0 0;
-          font-size: 24px;
-          padding: 0 0.5em;
-          .text {
-            width: 250px;
-            font-size: $font-Tablet * 1.2;
-            margin: 0;
-          }
+      }
+
+      .call-to-action {
+        // margin: 14em 0 0 19em;
+        font-size: 24px;
+        padding: 0;
+        .text {
+          // width: 250px;
+          font-size: $font-Tablet * 1.2;
+          margin: 0;
         }
       }
     }
@@ -542,7 +690,6 @@ COMO LA VISTA DE FIGMA.
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: $font-Laptop;
       .topnav {
         width: 100%;
         height: 100%;
@@ -578,21 +725,22 @@ COMO LA VISTA DE FIGMA.
       }
     }
     .section-1 {
-      .content {
+      .image {
         .first-text {
           width: 260px;
           margin: 1em 2em 0 1em;
           font-size: $font-Laptop * 2;
         }
-        .call-to-action {
-          margin: 18em 0 0 0;
-          font-size: 24px;
-          padding: 0;
-          .text {
-            width: 350px;
-            font-size: $font-Laptop * 1.2;
-            margin: 0;
-          }
+      }
+
+      .call-to-action {
+        margin: 19em 0 0 25em;
+        font-size: 24px;
+        padding: 0;
+        .text {
+          width: 350px;
+          font-size: $font-Laptop * 1.2;
+          margin: 0;
         }
       }
     }
@@ -647,28 +795,24 @@ COMO LA VISTA DE FIGMA.
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
   body {
-    #myHeader {
-      font-size: $font-Laptop-L;
-    }
-    button {
-      font-size: $font-Laptop-L * 1.2;
-    }
     .section-1 {
-      .content {
+      .image {
         .first-text {
-          width: 450px;
-          margin: 1em 2em 0 1em;
-          font-size: $font-Laptop-L * 2;
+          margin: 5% 30% 0 5%;
+          padding-right: 250px;
+          font-size: 80px;
         }
-        .call-to-action {
-          margin: 22em 0 0 0;
-          font-size: 24px;
-          padding: 0 1em;
-          .text {
-            width: 350px;
-            font-size: $font-Laptop-L * 1.2;
-            margin: 0;
-          }
+      }
+
+      .call-to-action {
+        margin: 42% 5% 0 45%;
+        padding-right: 40px;
+        font-size: 50px;
+      }
+      .button {
+        #acc-btn-1 {
+          margin: 5% 0 0 50%;
+          font-size: 40px;
         }
       }
     }
@@ -676,8 +820,9 @@ COMO LA VISTA DE FIGMA.
     .section-2 {
       .image {
         .text {
-          width: 200px;
-          font-size: $font-Laptop-L * 1.5;
+          margin: 20% 0 0 5%;
+          padding-right: 70%;
+          font-size: 60px;
         }
       }
     }
@@ -685,188 +830,25 @@ COMO LA VISTA DE FIGMA.
     .section-3 {
       .image {
         .text {
-          width: 350px;
-          margin: 17em 0 0 1em;
-          font-size: $font-Laptop-L * 1.5;
+          margin: 13% 0 0 1%;
+          padding-right: 75%;
+          font-size: 50px;
         }
       }
     }
     .section-4 {
       #acc-btn-2 {
-        margin: 20% 0 0 0%;
-        padding: 10px;
-        font-size: 24px;
+        margin: 20% 0 0 12%;
+        padding-left: 10%;
+        font-size: 50px;
       }
       .image {
         .call-to-action {
-          width: 300px;
+          width: 800px;
+          margin: 15% 0% 0% 21%;
           .text {
             margin: 10% 0% 0% 5%;
-            font-size: 30px;
-          }
-        }
-      }
-    }
-    footer {
-      .icons {
-        .ic-st {
-          font-size: $font-Laptop-L * 1.2;
-          i {
-            font-size: $font-Laptop-L * 2;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Extra extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1440px) {
-  body {
-    #myHeader {
-      font-size: $font-Laptop-XL;
-    }
-    button {
-      font-size: $font-Laptop-XL * 1.2;
-    }
-    .section-1 {
-      .content {
-        .first-text {
-          width: 450px;
-          margin: 1em 2em 0 1em;
-          font-size: $font-Laptop-XL * 2;
-        }
-        .call-to-action {
-          // width: 400px;
-          margin: 22em 0 0 0;
-          font-size: $font-Laptop-XL;
-          padding: 0 1em;
-          .text {
-            width: 400px;
-            font-size: $font-Laptop-XL * 1.2;
-            margin: 0;
-          }
-        }
-      }
-    }
-
-    .section-2 {
-      .image {
-        .text {
-          width: 200px;
-          font-size: $font-Laptop-XL * 1.5;
-        }
-      }
-    }
-
-    .section-3 {
-      .image {
-        .text {
-          width: 400px;
-          margin: 17em 0 0 1em;
-          font-size: $font-Laptop-XL * 1.5;
-        }
-      }
-    }
-    .section-4 {
-      #acc-btn-2 {
-        margin: 20% 0 0 0%;
-        padding: 10px;
-        font-size: 24px;
-      }
-      .image {
-        .call-to-action {
-          width: 300px;
-          .text {
-            margin: 10% 0% 0% 5%;
-            font-size: 30px;
-          }
-        }
-      }
-    }
-    footer {
-      .icons {
-        .ic-st {
-          font-size: $font-Laptop-XL * 1.2;
-          i {
-            font-size: $font-Laptop-XL * 2;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Extra extra extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1440px) {
-  body {
-    #myHeader {
-      font-size: $font-Laptop-XXL;
-    }
-    button {
-      font-size: $font-Laptop-XXL * 1.2;
-    }
-    .section-1 {
-      .content {
-        .first-text {
-          width: 450px;
-          margin: 1em 2em 0 1em;
-          font-size: $font-Laptop-XXL * 2;
-        }
-        .call-to-action {
-          // width: 400px;
-          margin: 28em 0 0 0;
-          font-size: $font-Laptop-XXL;
-          padding: 0 1em;
-          .text {
-            width: 400px;
-            font-size: $font-Laptop-XXL * 1.2;
-            margin: 0;
-          }
-        }
-      }
-    }
-
-    .section-2 {
-      .image {
-        .text {
-          width: 200px;
-          font-size: $font-Laptop-XXL * 1.5;
-        }
-      }
-    }
-
-    .section-3 {
-      .image {
-        .text {
-          width: 500px;
-          margin: 20em 0 0 1em;
-          font-size: $font-Laptop-XXL * 1.5;
-        }
-      }
-    }
-    .section-4 {
-      #acc-btn-2 {
-        margin: 20% 0 0 0%;
-        padding: 10px;
-        font-size: 24px;
-      }
-      .image {
-        .call-to-action {
-          width: 300px;
-          .text {
-            margin: 10% 0% 0% 5%;
-            font-size: 30px;
-          }
-        }
-      }
-    }
-    footer {
-      .icons {
-        .ic-st {
-          font-size: $font-Laptop-XXL;
-          i {
-            font-size: $font-Laptop-XXL;
+            font-size: 80px;
           }
         }
       }
