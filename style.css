@@ -621,8 +621,14 @@ footer .ic-st {
   }
 }
 
+@media only screen and (min-width: 393px) {
+  body .section-1 .content .call-to-action {
+    padding: 0 9.5% 3% 0;
+  }
+}
+
 /* Small devices (portrait tablets and large phones) */
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 420px) {
   body button {
     font-size: 15px;
   }
