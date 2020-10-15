@@ -18,7 +18,7 @@
 <body>
   <header id="myHeader">
     <div class="topnav">
-      <a href="#" id="logo">Logo</a>
+      <a href="#" id="logo"><img src="./img/LogoAmpas.svg" alt=""></a>
       <div class="matricula"><span>Ana Mabel Molina
           Productora Asesora de Seguros
           Mat. Nacional N* 92306</span></div>
@@ -78,8 +78,7 @@
       <img src="./img/pexels-the-coach-space-2977565.jpg" alt="houses">
     </div>
     <div class="about-me">
-      <h4>Sobre Mi</h4>
-      <br>
+      <h3>Sobre Mi</h3>
       <br>
       <p>Soy Ana Molina, Productora Asesora de Seguros.
       </p>
@@ -91,33 +90,39 @@
       <br>
       <p>Nuestro proposito es brindarle servicios de excelencia, acorde a sus necesidades.
       </p>
-
-    </div>
-
     </div>
   </section>
-  <form action="mail.php" method="POST">
-    <div id="myForm" class="formulario">
+
+  <form class="my-Form" id="my-Form" method="POST">
+    <div class="form">
+      <div class="tit-form">
+        <h3>Formulario de Contacto</h3>
+      </div>
       <div class="form-content">
-        <span class="close">&times;</span>
-        <p>Nombre</p>
-        <input type="text" name="nombre">
-        <p>Apellido</p>
-        <input type="text" name="apellido">
-        <p>Numero de telefono</p>
-        <input type="text" name="numero">
-        <p>Email</p>
-        <input type="text" name="email">
-        <p>Seguro de interes</p>
-        <input type="text" name="seguro">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+        <input type="text" id="numero" name="numero" placeholder="Nº de telefono:">
+        <input type="text" id="email" name="email" placeholder="Direccion de correo:">
+        <input type="text" id="seguro" name="seguro" placeholder="Consulta sobre seguro de:">
+        <textarea type="text" name="nota" id="nota" placeholder="Notas: "></textarea>
         <div class="submit">
-          <button><span>Enviar consulta</span>
-            <input type="submit" name="registrar" value="Enviar consulta">
-          </button>
+            <input id="btn-form" type="submit" name="registrar" value="Enviar consulta"> 
         </div>
+      </div>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Lo contactaremos a la brevedad.</h2>
+          </div>
+        </div>
+      
       </div>
     </div>
   </form>
+  
 
 
 

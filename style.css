@@ -106,6 +106,11 @@ body header .topnav #logo {
   top: 10px;
 }
 
+body header .topnav #logo img {
+  background-color: #000;
+  width: 2em;
+}
+
 body header .topnav #myLinks {
   display: none;
 }
@@ -309,7 +314,7 @@ body .section-4 .about-me p {
 }
 
 .my-Form {
-  background-color: #f2f3eb;
+  background-color: #F2F3EB;
   padding: 1em;
 }
 
@@ -318,7 +323,7 @@ body .section-4 .about-me p {
 }
 
 .form .tit-form {
-  background-color: #f2f3eb;
+  background-color: #F2F3EB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,29 +368,28 @@ body .section-4 .about-me p {
 }
 
 .form .form-content input {
-  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 10px;
   width: 60%;
   height: 2.5em;
-  background-color: #f2f3eb;
+  background-color: #F2F3EB;
   border: #aaa 0.5px;
   border-bottom: #000 2px solid;
 }
 
 .form .form-content input::-webkit-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content input:-ms-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content input::-ms-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content input::placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content input:focus {
@@ -393,28 +397,27 @@ body .section-4 .about-me p {
 }
 
 .form .form-content textarea {
-  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 10px;
   width: 60%;
-  background-color: #f2f3eb;
+  background-color: #F2F3EB;
   border: #aaa 0.5px;
   border-bottom: #000 2px solid;
 }
 
 .form .form-content textarea::-webkit-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content textarea:-ms-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content textarea::-ms-input-placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content textarea::placeholder {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 
 .form .form-content textarea:focus {
@@ -422,19 +425,18 @@ body .section-4 .about-me p {
 }
 
 .form #nota {
-  height: 10em;
+  height: 6em;
 }
 
 .form #btn-form {
   font-family: "Josefin Sans", sans-serif;
   width: 45%;
-  background-color: #f2f3eb;
+  background-color: #F2F3EB;
   border: #000 2px solid;
   color: black;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
   margin: 0.4em 0.2em;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -443,7 +445,7 @@ body .section-4 .about-me p {
 
 .form #btn-form:hover {
   background-color: #4e4e4e;
-  color: #f2f3eb;
+  color: #F2F3EB;
   font-weight: bold;
   opacity: 1;
 }
