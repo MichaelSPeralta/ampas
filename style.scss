@@ -19,7 +19,6 @@ $font-Laptop: 30px;
     left: 200%;
   }
 
-
   100% {
     left: 0%;
   }
@@ -115,6 +114,8 @@ body {
   .section-1 {
     display: flex;
     position: relative;
+    width: 100%;
+    height: auto;
     .image {
       display: flex;
       img {
@@ -175,6 +176,8 @@ body {
 
   .section-2 {
     display: flex;
+    width: 100%;
+    height: auto;
     .image {
       display: flex;
       img {
@@ -196,6 +199,8 @@ body {
   .section-3 {
     display: flex;
     position: relative;
+    width: 100%;
+    height: auto;
     .image {
       display: flex;
       img {
@@ -219,6 +224,8 @@ body {
   .section-4 {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: auto;
     // justify-content: center;
     position: relative;
     width: 100%;
