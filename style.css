@@ -278,9 +278,12 @@ body .section-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: auto;
-  height: 120%;
+  height: 100%;
 }
 
 body .section-4 .image {
@@ -290,7 +293,7 @@ body .section-4 .image {
 }
 
 body .section-4 .image img {
-  opacity: 0.5;
+  opacity: 0.1;
   width: 100%;
   height: auto;
 }
@@ -298,8 +301,7 @@ body .section-4 .image img {
 body .section-4 .about-me {
   padding: 1em;
   position: absolute;
-  height: 100%;
-  padding: 0 1em;
+  padding: .5em 1em;
 }
 
 body .section-4 .about-me p {

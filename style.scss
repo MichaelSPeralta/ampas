@@ -217,13 +217,16 @@ body {
 
   .section-4 {
     display: flex;
+    align-items: center;
+    // justify-content: center;
     position: relative;
     width: auto;
-    height: 120%;
+    height: 100%;
+
     .image {
       display: flex;
       img {
-        opacity: 0.5;
+        opacity: 0.1;
         width: 100%;
         height: auto;
       }
@@ -231,8 +234,7 @@ body {
     .about-me {
       padding: 1em;
       position: absolute;
-      height: 100%;
-      padding: 0 1em;
+      padding: .5em 1em;
       p {
         font-size: $font-Mobile-S;
       }
