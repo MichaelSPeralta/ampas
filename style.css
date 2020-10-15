@@ -102,8 +102,8 @@ body header .topnav .matricula {
 
 body header .topnav #logo {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0.5em;
+  top: 0.5em;
 }
 
 body header .topnav #logo img {
@@ -125,7 +125,7 @@ body header .topnav .icon {
 body header .topnav .control-nav {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 1em;
 }
 
 body header .topnav .control-nav a {
@@ -306,15 +306,32 @@ body .section-4 .image img {
 body .section-4 .about-me {
   padding: 1em;
   position: absolute;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 body .section-4 .about-me p {
   font-size: 13px;
 }
 
+body .section-5 {
+  width: 100%;
+  text-align: center;
+}
+
+body .section-5 img {
+  width: 15%;
+  margin: 1em 1em;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+body .section-5 img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 .my-Form {
-  background-color: #F2F3EB;
+  background-color: #f2f3eb;
   padding: 1em;
 }
 
@@ -323,7 +340,7 @@ body .section-4 .about-me p {
 }
 
 .form .tit-form {
-  background-color: #F2F3EB;
+  background-color: #f2f3eb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,7 +388,7 @@ body .section-4 .about-me p {
   margin-bottom: 10px;
   width: 60%;
   height: 2.5em;
-  background-color: #F2F3EB;
+  background-color: #f2f3eb;
   border: #aaa 0.5px;
   border-bottom: #000 2px solid;
 }
@@ -399,7 +416,7 @@ body .section-4 .about-me p {
 .form .form-content textarea {
   margin-bottom: 10px;
   width: 60%;
-  background-color: #F2F3EB;
+  background-color: #f2f3eb;
   border: #aaa 0.5px;
   border-bottom: #000 2px solid;
 }
@@ -431,7 +448,7 @@ body .section-4 .about-me p {
 .form #btn-form {
   font-family: "Josefin Sans", sans-serif;
   width: 45%;
-  background-color: #F2F3EB;
+  background-color: #f2f3eb;
   border: #000 2px solid;
   color: black;
   text-align: center;
@@ -445,7 +462,7 @@ body .section-4 .about-me p {
 
 .form #btn-form:hover {
   background-color: #4e4e4e;
-  color: #F2F3EB;
+  color: #f2f3eb;
   font-weight: bold;
   opacity: 1;
 }
