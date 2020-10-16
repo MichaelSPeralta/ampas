@@ -81,22 +81,24 @@ body header .topnav {
   overflow: hidden;
 }
 
-body header .topnav .matricula {
-  width: 150px;
-  height: auto;
-  font-size: 10px;
-  margin: 5px 20%;
+body header .topnav .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .3em;
 }
 
-body header .topnav #logo {
-  position: absolute;
-  left: 0.5em;
-  top: 0.5em;
-}
-
-body header .topnav #logo img {
-  /*background-color: #000;*/
+body header .topnav .header-content a img {
   width: 2em;
+}
+
+body header .topnav .header-content .matricula {
+  font-size: 8px;
+  width: 30%;
+  margin-left: 1em;
 }
 
 body header .topnav #myLinks {
@@ -686,14 +688,17 @@ COMO LA VISTA DE FIGMA.
         -ms-flex-align: center;
             align-items: center;
   }
-  body #myHeader .topnav #logo {
+  body #myHeader .topnav .header-content a {
     position: static;
-    margin: 1em;
+    margin: 0 1em;
   }
-  body #myHeader .topnav .matricula {
+  body #myHeader .topnav .header-content a img {
+    width: 4em;
+  }
+  body #myHeader .topnav .header-content .matricula {
     width: 150px;
     height: auto;
-    font-size: 10px;
+    font-size: 12px;
     margin: 10px 20px;
   }
   body #myHeader .topnav #myLinks {
