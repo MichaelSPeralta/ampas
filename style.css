@@ -95,7 +95,7 @@ body header .topnav #logo {
 }
 
 body header .topnav #logo img {
-  background-color: #000;
+  /*background-color: #000;*/
   width: 2em;
 }
 
