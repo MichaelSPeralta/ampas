@@ -34,6 +34,11 @@ $font-Laptop: 28px;
   }
 }
 
+h1{
+  font-size: 90%;
+font-weight: 700;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
 
@@ -134,7 +139,7 @@ body {
       z-index: 5;
       .first-text {
         position: relative;
-        width: 145px;
+        width: 150px;
         height: auto;
         margin: 1em 0 0 1em;
         letter-spacing: 2px;
@@ -142,6 +147,7 @@ body {
         animation-name: rightAnim;
         animation-duration: 2.5s;
         animation-timing-function: ease;
+
       }
     }
     .call-to-action {
@@ -245,6 +251,7 @@ body {
       padding: 1em;
       position: absolute;
       padding: 0.5em 1em;
+
       p {
         font-size: $font-Mobile-S;
       }
@@ -294,6 +301,8 @@ body {
       width: 100%;
     }
     input {
+      font-family: "Josefin Sans", sans-serif;
+
       margin-bottom: 10px;
       width: 60%;
       height: 2.5em;
@@ -301,11 +310,32 @@ body {
       border: #aaa 0.5px;
       border-bottom: #000 2px solid;
     }
+    input + span {
+      position: relative;
+    }
+    input + span::before {
+      position: absolute;
+      left: 6rem;
+      top: -2.5rem;
+    }
+ 
     input::placeholder {
       font-size: $font-Mobile-S;
+      
     }
     input:focus {
       outline: none;
+    }
+    input:invalid {
+      border-bottom: rgb(223, 14, 14) 1px solid;
+    }
+    input:invalid + span::before {
+      content: '✖';
+      color: red;
+    }
+    input:valid + span::before {
+      content: '✓';
+      color: green;
     }
     textarea {
       margin-bottom: 10px;
@@ -319,6 +349,29 @@ body {
     }
     textarea:focus {
       outline: none;
+    }
+    p{
+      width: 60%;
+      margin-bottom: 10px;
+      // background-color: #f2f3eb;
+      font-size: $font-Mobile-S;
+      color: rgb(121, 120, 120);
+    }
+    .select-wrapper{
+      width: 60%;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      background-color: #f2f3eb;
+      border: #aaa 0.5px;
+      border-bottom: #000 2px solid;
+      select{
+        background-color: #f2f3eb;
+      border: #aaa 0.5px;
+      // appearance: none;
+      }
+      select:focus{
+        outline: none;
+      }
     }
   }
   #nota {
@@ -820,6 +873,9 @@ COMO LA VISTA DE FIGMA.
       }
     }
 
+    .section-5{
+      padding: 3em 0;
+    }
     .form {
       .tit-form {
         h3 {
@@ -852,33 +908,32 @@ COMO LA VISTA DE FIGMA.
 @media only screen and (min-width: 1200px) {
   body {
     .section-1 {
-      .image {
-        .first-text {
-          margin: 5% 30% 0 5%;
-          padding-right: 250px;
-          font-size: 80px;
-        }
-      }
+      .image{
 
-      .call-to-action {
-        margin: 42% 5% 0 45%;
-        padding-right: 40px;
-        font-size: 50px;
       }
-      .button {
-        #acc-btn-1 {
-          margin: 5% 0 0 50%;
-          font-size: 40px;
+      .content{
+        .first-text{
+          font-size: $font-Laptop *2;
+        }
+        .call-to-action{
+          .text{
+            padding-left:0;
+            line-height:120%;
+            span{
+              font-size: $font-Laptop *1.5;
+            }
+          }
+        }
+        button{
+          font-size: $font-Laptop *1.5;
         }
       }
     }
 
     .section-2 {
-      .image {
-        .text {
-          margin: 20% 0 0 5%;
-          padding-right: 70%;
-          font-size: 60px;
+      .image{
+        .text{
+          font-size: $font-Laptop *1.5;
         }
       }
     }
@@ -886,9 +941,10 @@ COMO LA VISTA DE FIGMA.
     .section-3 {
       .image {
         .text {
-          margin: 13% 0 0 1%;
-          padding-right: 75%;
-          font-size: 50px;
+          padding: 1em;
+          span{
+            font-size: $font-Laptop *1.5;
+          }
         }
       }
     }
@@ -911,3 +967,8 @@ COMO LA VISTA DE FIGMA.
     }
   }
 }
+
+@media only screen and (min-width: 1436) {
+
+}
+  

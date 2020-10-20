@@ -20,12 +20,12 @@
     <div class="topnav">
       <div class="header-content">
         <a href="#" id="logo"><img src="./img/logo_ampas.png" alt=""></a>
-      <div class="matricula">
-        <span>Ana Mabel Molina
-          Productora Asesora de Seguros
-          Mat. Nacional N* 92306
-        </span>
-      </div>
+        <div class="matricula">
+          <span>Ana Mabel Molina
+            Productora Asesora de Seguros
+            Mat. Nacional N* 92306
+          </span>
+        </div>
       </div>
       <div id="myLinks" class="control-nav">
         <a href="#section-1">Inicio</a>
@@ -45,7 +45,7 @@
     </div>
     <div class="content">
       <div class="first-text">
-        <span>La TRANQUILIDAD de estar seguro siempre!!</span>
+        <h1>La TRANQUILIDAD de estar seguro siempre!!</h1>
       </div>
       <div class="call-to-action">
         <div class="text">
@@ -83,7 +83,7 @@
       <img src="./img/pexels-the-coach-space-2977565.jpg" alt="houses">
     </div>
     <div id="about-me" class="about-me">
-      <h3>Sobre Mi</h3>
+      <h2>Sobre Mi</h2>
       <br>
       <p>Soy Ana Molina, Productora Asesora de Seguros.
       </p>
@@ -104,14 +104,26 @@
         <h3>Consultas? Hablamos!</h3>
       </div>
       <div class="form-content">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
-        <input type="number" id="numero" name="numero" placeholder="Nº de telefono:">
-        <input type="email" id="email" name="email" placeholder="Direccion de correo:">
-        <input type="text" id="seguro" name="seguro" placeholder="Tipo de seguro a consultar: ">
-        <textarea type="text" name="nota" id="nota" placeholder="Notas: "></textarea>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
+        <span></span>
+        <input type="text" id="apellido" name="apellido" required placeholder="Apellido:">
+        <span></span>
+        <input type="number" id="numero" name="numero" required placeholder="Nº de telefono:">
+        <span></span>
+        <input type="email" id="email" name="email" required placeholder="Direccion de correo:">
+        <span></span>
+        <p>Seleccione tipo de seguro: </p>
+        <div class="select-wrapper">
+          <select id="select" name="select">
+            <option>Auto</option>
+            <option>Hogar</option>
+            <option>Vida</option>
+            <option>Otros</option>
+          </select>
+        </div>
+        <textarea type="text" name="nota" id="nota" maxlength="150" placeholder="Notas: "></textarea>
         <div class="submit">
-            <input id="btn-form" type="submit" name="registrar" value="Enviar consulta"> 
+          <input id="btn-form" type="submit" name="registrar" value="Enviar consulta">
         </div>
       </div>
       <div id="myModal" class="modal">
@@ -123,11 +135,10 @@
             <h2>Lo contactaremos a la brevedad.</h2>
           </div>
         </div>
-      
       </div>
     </div>
   </form>
-  
+
   <section class="section-5">
     <img src="./img/caruso-seguros.svg" alt="">
     <img src="./img/experta-seguros.svg" alt="">
