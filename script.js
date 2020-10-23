@@ -3,7 +3,7 @@ function menuFunction() {
   var a = document.getElementById("myHeader");
   if (x.style.display === "block") {
     x.style.display = "none";
-    a.style.height = "40px";
+    // a.style.height = "40px";
   } else {
     x.style.display = "block";
     a.style.height = "auto";
@@ -12,8 +12,10 @@ function menuFunction() {
 
 document.addEventListener("DOMContentLoaded", function () {
   var btn = document.getElementById("acc-btn-1");
-  var btn2 = document.getElementById("acc-btn-2");
+  // var btn2 = document.getElementById("acc-btn-2");
   var form = document.getElementById("myForm");
+  var nombre = document.getElementById("nombre");
+  var apellido = document.getElementById("apellido");
   var span = document.getElementsByClassName("close")[0];
 
   // Acciones con el formulario
@@ -23,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Abrir formulario con boton Saber Mas
-  btn2.addEventListener("click", function () {
-    form.style.display = "block";
-  });
+  // btn2.addEventListener("click", function () {
+  //   form.style.display = "block";
+  // });
 
   // Cerrar
   span.onclick = function () {
@@ -38,4 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
       form.style.display = "none";
     }
   };
+
+  // apellido.onkeyup = function () {
+  //   if (apellido == Number) {
+  //     var valor = apellido.value;
+  //     console.log(valor);
+  //   }
+  // };
 });

@@ -76,7 +76,6 @@ body button:focus {
 
 body header {
   width: auto;
-  height: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
@@ -84,6 +83,7 @@ body header {
 
 body header .topnav {
   overflow: hidden;
+  position: relative;
 }
 
 body header .topnav .header-content {
@@ -97,7 +97,7 @@ body header .topnav .header-content {
 }
 
 body header .topnav .header-content a img {
-  width: 2em;
+  width: 3.5em;
 }
 
 body header .topnav .header-content .matricula {
@@ -114,7 +114,11 @@ body header .topnav .icon {
   color: black;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 15px;
+}
+
+body header .topnav .icon i {
+  font-size: 1.5em;
 }
 
 body header .topnav .control-nav {
@@ -405,8 +409,8 @@ body .section-5 img:hover {
 
 .form .form-content input + span::before {
   position: absolute;
-  left: 6rem;
-  top: -2.5rem;
+  left: 4.5rem;
+  top: -2rem;
 }
 
 .form .form-content input::-webkit-input-placeholder {
@@ -434,12 +438,12 @@ body .section-5 img:hover {
 }
 
 .form .form-content input:invalid + span::before {
-  content: '✖';
+  content: "✖";
   color: red;
 }
 
 .form .form-content input:valid + span::before {
-  content: '✓';
+  content: "✓";
   color: green;
 }
 
