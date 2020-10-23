@@ -58,7 +58,7 @@
     </div>
   </section>
 
-  <section class=" section-2">
+  <section class="section-2">
     <div class="image">
       <img src="./img/family.png" alt="guy-with-key">
       <div class="text">
@@ -104,11 +104,12 @@
         <h3>Consultas? Hablamos!</h3>
       </div>
       <div class="form-content">
-        <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
+        <input type="text" id="nombre" maxlength="30" name="nombre" required placeholder="Nombre:">
         <span></span>
-        <input type="text" id="apellido" name="apellido" required placeholder="Apellido:">
+        <input type="text" id="apellido" maxlength="30" name="apellido" required placeholder="Apellido:">
         <span></span>
-        <input type="number" id="numero" name="numero" required placeholder="Nº de telefono:">
+        <input type="number" id="numero" minlength="6" maxlength="15" name="numero" required
+          placeholder="Cod. area + Tel:">
         <span></span>
         <input type="email" id="email" name="email" required placeholder="Direccion de correo:">
         <span></span>

@@ -41,7 +41,9 @@ h1 {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
   button {
     margin-top: 5px;
     background: rgba(255, 255, 255, 0.48);
@@ -331,14 +333,17 @@ body {
     input:invalid {
       border-bottom: rgb(223, 14, 14) 1px solid;
     }
+
     input:invalid + span::before {
       content: "✖";
       color: red;
     }
+
     input:valid + span::before {
       content: "✓";
       color: green;
     }
+
     textarea {
       margin-bottom: 10px;
       width: 60%;
