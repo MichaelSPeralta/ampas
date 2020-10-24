@@ -67,59 +67,72 @@ body {
   }
 
   header {
-    width: auto;
-    // height: 40px;
-    background: #ffffff;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: auto;
+    font-family: Fjalla One;
+
     .topnav {
-      overflow: hidden;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 0.5em;
       .header-content {
-        display: flex;
-        // justify-content: space-between;
-        align-items: center;
-        margin: 0.3em;
         a {
           img {
-            width: 3.5em;
+            width: 8rem;
+            height: auto;
           }
         }
-        .matricula {
-          font-size: $font-Mobile-S - 5px;
-          width: 30%;
-          margin-left: 1em;
-        }
       }
+      .matricula {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 1em;
+      }
+      .icon-control {
+        // width: 90%;
+        display: flex;
+        justify-content: space-between;
 
-      #myLinks {
-        display: none;
-      }
-      .icon {
-        color: black;
-        position: absolute;
-        right: 10px;
-        top: 15px;
-        i {
-          font-size: 1.5em;
+        a {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            margin-right: 1em;
+          }
         }
       }
       .control-nav {
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 1em;
+        font-family: "Josefin Sans", sans-serif;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         a {
+          width: 70%;
           text-decoration: none;
-          color: black;
-          margin: 0 60px;
-          padding: 14px 16px;
-          display: block;
+          padding: 1rem;
+          // margin: 0 60px;
+          text-transform: uppercase;
+          text-align: center;
         }
         a:hover {
-          border: 1px solid rgb(255, 255, 255);
+          border: 1px solid white;
           border-radius: 10px;
           background: #ffffff;
           box-shadow: inset -3px 4px 6px rgba(0, 0, 0, 0.25);
-          padding: 10px;
+          padding: 1rem;
+        }
+        a:focus {
+          outline: none;
+        }
+        a:visited {
+          color: black;
         }
       }
     }
@@ -156,27 +169,33 @@ body {
       }
     }
     .call-to-action {
+      background-color: #ffffffd9;
       width: 100%;
-      height: 100%;
-      // position: absolute;
-      display: flex;
-      // align-items: baseline;
-      justify-content: flex-end;
-      flex-direction: column;
-      // margin: 20% 2% 0 95%;
-      padding: 0 5% 2% 0;
+      height: 50%;
+      align-self: flex-end;
+      // display: flex;
+      // justify-content: flex-end;
+      // flex-direction: column;
+      padding: 1em;
+      margin: 0 1em 1em 0;
       font-size: $font-Mobile-S;
+      text-align: center;
+      position: relative;
+      animation-name: leftAnim;
+      animation-duration: 3.5s;
+      animation-timing-function: ease-out;
+      // border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.75);
       .text {
-        width: 100%;
+        // width: 90%;
         height: auto;
         line-height: 120%;
-        text-align: right;
+
+        // text-align: right;
         // margin: 0 0 0 0.5em;
         // padding: 5% 0 0 15%;
-        position: relative;
-        animation-name: leftAnim;
-        animation-duration: 3.5s;
-        animation-timing-function: ease-out;
+
         // span {
         //   width: 134px;
         // }
@@ -330,14 +349,14 @@ body {
     input:focus {
       outline: none;
     }
-    input:invalid {
-      border-bottom: rgb(223, 14, 14) 1px solid;
-    }
+    // input:invalid {
+    //   border-bottom: rgb(223, 14, 14) 2px solid;
+    // }
 
-    input:invalid + span::before {
-      content: "✖";
-      color: red;
-    }
+    // input:invalid + span::before {
+    //   content: "✖";
+    //   color: red;
+    // }
 
     input:valid + span::before {
       content: "✓";
