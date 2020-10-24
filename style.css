@@ -237,8 +237,8 @@ body .section-1 .call-to-action {
   height: 50%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1em;
-  margin: 0 1em 1em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   font-size: 13px;
   text-align: center;
   position: relative;
@@ -254,6 +254,7 @@ body .section-1 .call-to-action {
 }
 
 body .section-1 .call-to-action .text {
+  padding-top: 0.5em;
   height: auto;
   line-height: 120%;
 }
@@ -261,6 +262,7 @@ body .section-1 .call-to-action .text {
 body .section-1 .call-to-action .button {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding-top: 0.5em;
 }
 
 body .section-2 {
