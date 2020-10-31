@@ -685,6 +685,10 @@ footer .icons {
   body .section-1 .content .first-text {
     font-size: 16px;
   }
+  body .section-1 .content .call-to-action {
+    font-size: 14px;
+    padding: 1em;
+  }
   body .section-1 .content .call-to-action .text {
     font-size: 14px;
   }
@@ -900,6 +904,33 @@ COMO LA VISTA DE FIGMA.
 }
 
 /* Large devices (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+  body button {
+    margin-top: 0;
+  }
+  body .section-1 .content .first-text {
+    line-height: 143.4%;
+    letter-spacing: 8px;
+  }
+  body .section-1 .call-to-action {
+    width: 100%;
+    border-radius: 50px;
+  }
+  body .section-1 .call-to-action .text {
+    width: 71%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    line-height: 134%;
+    padding-top: 0px;
+    padding: 1em;
+  }
+  body .section-1 .call-to-action .text span {
+    width: 90%;
+    text-align: center;
+  }
+}
+
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
   body .section-1 .content .first-text {

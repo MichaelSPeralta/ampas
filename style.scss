@@ -539,7 +539,8 @@ footer {
           font-size: $font-Mobile-M + 2px;
         }
         .call-to-action {
-          // margin: 12.5em 2% 0 15.5em;
+          font-size: $font-Mobile-M;
+          padding: 1em;
           .text {
             font-size: $font-Mobile-M;
           }
@@ -822,6 +823,37 @@ COMO LA VISTA DE FIGMA.
 }
 
 /* Large devices (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+  body {
+    button {
+      margin-top: 0;
+    }
+    .section-1 {
+      .content {
+        .first-text {
+          line-height: 143.4%;
+          letter-spacing: 8px;
+        }
+      }
+      .call-to-action {
+        width: 100%;
+        border-radius: 50px;
+        .text {
+          width: 71%;
+          align-self: center;
+          line-height: 134%;
+          padding-top: 0px;
+          padding: 1em;
+          span {
+            width: 90%;
+            // padding: 0 2em;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
 
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
