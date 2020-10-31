@@ -932,41 +932,64 @@ COMO LA VISTA DE FIGMA.
 }
 
 /* Extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1420px) {
+  body {
+    font-size: 28px;
+  }
   body .section-1 .content .first-text {
+    padding-right: 19%;
     font-size: 56px;
   }
+  body .section-1 .content .call-to-action {
+    width: 100%;
+    font-size: 28px;
+  }
   body .section-1 .content .call-to-action .text {
-    padding-left: 0;
-    line-height: 120%;
+    padding: 0;
+    padding-bottom: 1em;
+    font-size: 28px;
   }
-  body .section-1 .content .call-to-action .text span {
-    font-size: 42px;
-  }
-  body .section-1 .content button {
-    font-size: 42px;
+  body .section-1 .content .call-to-action .button {
+    padding: 0em;
   }
   body .section-2 .image .text {
     font-size: 42px;
   }
+  body .section-2 .image .text span {
+    font-size: 42px;
+  }
   body .section-3 .image .text {
-    padding: 1em;
+    font-size: 42px;
+    margin: 0;
+    width: 40%;
+    height: 30%;
   }
   body .section-3 .image .text span {
     font-size: 42px;
   }
-  body .section-4 #acc-btn-2 {
-    margin: 20% 0 0 12%;
-    padding-left: 10%;
-    font-size: 50px;
+  body .section-4 {
+    font-size: 42px;
   }
-  body .section-4 .image .call-to-action {
-    width: 800px;
-    margin: 15% 0% 0% 21%;
+  body .section-4 .about-me p {
+    font-size: 42px;
   }
-  body .section-4 .image .call-to-action .text {
-    margin: 10% 0% 0% 5%;
-    font-size: 80px;
+  body .my-Form {
+    margin: 2em 11em;
+  }
+  body .my-Form .form .tit-form h3 {
+    font-size: 42px;
+  }
+  body .my-Form .form .form-content::-webkit-input-placeholder {
+    font-size: 42px;
+  }
+  body .my-Form .form .form-content:-ms-input-placeholder {
+    font-size: 42px;
+  }
+  body .my-Form .form .form-content::-ms-input-placeholder {
+    font-size: 42px;
+  }
+  body .my-Form .form .form-content::placeholder {
+    font-size: 42px;
   }
 }
 /*# sourceMappingURL=style.css.map */
