@@ -169,9 +169,13 @@ body {
       }
     }
     .call-to-action {
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+      flex-direction: column;
       background-color: #ffffffd9;
       width: 100%;
-      height: 50%;
+      // height: 50%;
       align-self: flex-end;
       // display: flex;
       // justify-content: flex-end;
@@ -188,9 +192,8 @@ body {
       border-radius: 10px;
       box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.75);
       .text {
-        // width: 90%;
+        width: 100%;
         padding-top: 0.5em;
-
         height: auto;
         line-height: 120%;
         // margin-bottom: 5px;
@@ -203,14 +206,16 @@ body {
         // }
       }
       .button {
-        align-self: flex-end;
-        padding-top: 0.5em;
+        align-self: center;
+        padding: 0.5em;
       }
     }
   }
 
   .section-2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     .image {
@@ -538,7 +543,7 @@ footer {
           .text {
             font-size: $font-Mobile-M;
           }
-          padding: 0 8.5% 4% 0;
+          // padding: 0 8.5% 4% 0;
         }
       }
     }
@@ -577,13 +582,6 @@ footer {
 
 @media only screen and (min-width: 393px) {
   body {
-    .section-1 {
-      .content {
-        .call-to-action {
-          padding: 0 9.5% 3% 0;
-        }
-      }
-    }
   }
 }
 /* Small devices (portrait tablets and large phones) */
@@ -673,44 +671,44 @@ COMO LA VISTA DE FIGMA.
     #myHeader {
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+
       .topnav {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        flex-direction: row;
         .header-content {
           a {
             position: static;
             margin: 0 1em;
-            img {
-              width: 4em;
-            }
-          }
-          .matricula {
-            width: 150px;
-            height: auto;
-            font-size: $font-Tablet - 12px;
-            margin: 10px 20px;
           }
         }
-        #myLinks {
-          width: 100%;
+        .matricula {
+          display: inline;
+          text-align: start;
+          // width: 150px;
+          height: auto;
+          font-size: $font-Tablet - 12px;
+          // margin: 10px 20px;
+          padding: 0 90px 0 0;
+        }
+
+        .control-nav {
+          width: 150%;
           height: 100%;
           display: flex;
-          justify-content: flex-end;
-          align-items: center;
+          justify-content: space-between;
+          // align-items: center;
+          flex-direction: row;
           margin: 0;
           a {
+            width: 100%;
+            height: 100%;
+
             margin: 0;
-          }
-        }
-        .icon {
-          i {
-            display: none;
+            padding: 20px 5px;
           }
         }
       }
@@ -723,7 +721,8 @@ COMO LA VISTA DE FIGMA.
         .call-to-action {
           // margin: 14em 0 0 19em;
           // font-size: 24px;
-          // padding: 0;
+          margin: 1em;
+          padding: 1em;
           .text {
             font-size: $font-Tablet;
           }
@@ -774,6 +773,31 @@ COMO LA VISTA DE FIGMA.
     .my-Form {
       margin: 2em 4em;
       box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.75);
+      .form {
+        padding: 1em;
+        .tit-form {
+          h3 {
+            font-size: 24px;
+          }
+        }
+        .form-content {
+          textarea,
+          textarea::placeholder,
+          p,
+          input::placeholder {
+            font-size: $font-Tablet;
+          }
+          .select-wrapper {
+            select {
+              font-size: $font-Tablet;
+
+              option {
+                font-size: $font-Tablet;
+              }
+            }
+          }
+        }
+      }
       input {
         font-size: $font-Tablet;
       }
@@ -798,140 +822,6 @@ COMO LA VISTA DE FIGMA.
 }
 
 /* Large devices (laptops/desktops) */
-@media only screen and (min-width: 992px) {
-  body {
-    #myHeader {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .topnav {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .header-content {
-          a {
-            img {
-              width: 80px;
-            }
-          }
-          .matricula {
-            width: 150px;
-            height: auto;
-            margin: 10px 20px;
-            span {
-              font-size: $font-Laptop - 15px;
-            }
-          }
-        }
-
-        #myLinks {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          margin: 0;
-          a {
-            margin: 0;
-            font-size: $font-Laptop;
-          }
-        }
-        .icon {
-          i {
-            display: none;
-          }
-        }
-      }
-    }
-    .section-1 {
-      .image {
-        .first-text {
-          width: 260px;
-          margin: 1em 2em 0 1em;
-          font-size: $font-Laptop;
-        }
-      }
-
-      .content {
-        .call-to-action {
-          padding: 0 9.5% 7% 0;
-          .text {
-            padding-left: 3em;
-            span {
-              font-size: $font-Laptop;
-            }
-            margin: 0;
-          }
-        }
-      }
-    }
-
-    .section-2 {
-      .image {
-        .text {
-          width: 200px;
-          font-size: $font-Laptop;
-        }
-      }
-    }
-
-    .section-3 {
-      .image {
-        .text {
-          width: 275px;
-          margin: 15em 0 0 5em;
-          span {
-            font-size: $font-Laptop;
-          }
-        }
-      }
-    }
-    .section-4 {
-      .about-me {
-        h3 {
-          font-size: $font-Laptop + 10px;
-        }
-        p {
-          font-size: $font-Laptop;
-          padding-bottom: 20px;
-        }
-      }
-    }
-
-    .section-5 {
-      padding: 3em 0;
-    }
-    .form {
-      .tit-form {
-        h3 {
-          font-size: $font-Laptop + 10px;
-        }
-      }
-      .form-content {
-        input {
-          font-size: $font-Laptop;
-        }
-        input::placeholder {
-          font-size: $font-Laptop - 10px;
-        }
-        textarea::placeholder {
-          font-size: $font-Laptop - 10px;
-        }
-      }
-    }
-    footer {
-      .icons {
-        i {
-          font-size: $font-Laptop * 2;
-        }
-      }
-    }
-  }
-}
 
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
@@ -994,7 +884,4 @@ COMO LA VISTA DE FIGMA.
       }
     }
   }
-}
-
-@media only screen and (min-width: 1436) {
 }

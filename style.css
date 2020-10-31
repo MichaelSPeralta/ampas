@@ -232,9 +232,15 @@ body .section-1 .content .first-text {
 }
 
 body .section-1 .call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #ffffffd9;
   width: 100%;
-  height: 50%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5em;
@@ -254,21 +260,29 @@ body .section-1 .call-to-action {
 }
 
 body .section-1 .call-to-action .text {
+  width: 100%;
   padding-top: 0.5em;
   height: auto;
   line-height: 120%;
 }
 
 body .section-1 .call-to-action .button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-top: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5em;
 }
 
 body .section-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: auto;
 }
@@ -671,9 +685,6 @@ footer .icons {
   body .section-1 .content .first-text {
     font-size: 16px;
   }
-  body .section-1 .content .call-to-action {
-    padding: 0 8.5% 4% 0;
-  }
   body .section-1 .content .call-to-action .text {
     font-size: 14px;
   }
@@ -692,12 +703,6 @@ footer .icons {
   }
   body footer .icons {
     font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 393px) {
-  body .section-1 .content .call-to-action {
-    padding: 0 9.5% 3% 0;
   }
 }
 
@@ -755,64 +760,53 @@ COMO LA VISTA DE FIGMA.
   body #myHeader {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body #myHeader .topnav {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body #myHeader .topnav .header-content a {
     position: static;
     margin: 0 1em;
   }
-  body #myHeader .topnav .header-content a img {
-    width: 4em;
-  }
-  body #myHeader .topnav .header-content .matricula {
-    width: 150px;
+  body #myHeader .topnav .matricula {
+    display: inline;
+    text-align: start;
     height: auto;
     font-size: 12px;
-    margin: 10px 20px;
+    padding: 0 90px 0 0;
   }
-  body #myHeader .topnav #myLinks {
-    width: 100%;
+  body #myHeader .topnav .control-nav {
+    width: 150%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 0;
   }
-  body #myHeader .topnav #myLinks a {
+  body #myHeader .topnav .control-nav a {
+    width: 100%;
+    height: 100%;
     margin: 0;
-  }
-  body #myHeader .topnav .icon i {
-    display: none;
+    padding: 20px 5px;
   }
   body .section-1 .content .first-text {
     font-size: 43.2px;
+  }
+  body .section-1 .content .call-to-action {
+    margin: 1em;
+    padding: 1em;
   }
   body .section-1 .content .call-to-action .text {
     font-size: 24px;
@@ -854,6 +848,42 @@ COMO LA VISTA DE FIGMA.
     -webkit-box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.75);
   }
+  body .my-Form .form {
+    padding: 1em;
+  }
+  body .my-Form .form .tit-form h3 {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content textarea,
+  body .my-Form .form .form-content textarea::-webkit-input-placeholder,
+  body .my-Form .form .form-content p,
+  body .my-Form .form .form-content input::-webkit-input-placeholder {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content textarea,
+  body .my-Form .form .form-content textarea:-ms-input-placeholder,
+  body .my-Form .form .form-content p,
+  body .my-Form .form .form-content input:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content textarea,
+  body .my-Form .form .form-content textarea::-ms-input-placeholder,
+  body .my-Form .form .form-content p,
+  body .my-Form .form .form-content input::-ms-input-placeholder {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content textarea,
+  body .my-Form .form .form-content textarea::placeholder,
+  body .my-Form .form .form-content p,
+  body .my-Form .form .form-content input::placeholder {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content .select-wrapper select {
+    font-size: 24px;
+  }
+  body .my-Form .form .form-content .select-wrapper select option {
+    font-size: 24px;
+  }
   body .my-Form input {
     font-size: 24px;
   }
@@ -870,136 +900,6 @@ COMO LA VISTA DE FIGMA.
 }
 
 /* Large devices (laptops/desktops) */
-@media only screen and (min-width: 992px) {
-  body #myHeader {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body #myHeader .topnav {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body #myHeader .topnav .header-content a img {
-    width: 80px;
-  }
-  body #myHeader .topnav .header-content .matricula {
-    width: 150px;
-    height: auto;
-    margin: 10px 20px;
-  }
-  body #myHeader .topnav .header-content .matricula span {
-    font-size: 13px;
-  }
-  body #myHeader .topnav #myLinks {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-  }
-  body #myHeader .topnav #myLinks a {
-    margin: 0;
-    font-size: 28px;
-  }
-  body #myHeader .topnav .icon i {
-    display: none;
-  }
-  body .section-1 .image .first-text {
-    width: 260px;
-    margin: 1em 2em 0 1em;
-    font-size: 28px;
-  }
-  body .section-1 .content .call-to-action {
-    padding: 0 9.5% 7% 0;
-  }
-  body .section-1 .content .call-to-action .text {
-    padding-left: 3em;
-    margin: 0;
-  }
-  body .section-1 .content .call-to-action .text span {
-    font-size: 28px;
-  }
-  body .section-2 .image .text {
-    width: 200px;
-    font-size: 28px;
-  }
-  body .section-3 .image .text {
-    width: 275px;
-    margin: 15em 0 0 5em;
-  }
-  body .section-3 .image .text span {
-    font-size: 28px;
-  }
-  body .section-4 .about-me h3 {
-    font-size: 38px;
-  }
-  body .section-4 .about-me p {
-    font-size: 28px;
-    padding-bottom: 20px;
-  }
-  body .section-5 {
-    padding: 3em 0;
-  }
-  body .form .tit-form h3 {
-    font-size: 38px;
-  }
-  body .form .form-content input {
-    font-size: 28px;
-  }
-  body .form .form-content input::-webkit-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content input:-ms-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content input::-ms-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content input::placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content textarea::-webkit-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content textarea:-ms-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content textarea::-ms-input-placeholder {
-    font-size: 18px;
-  }
-  body .form .form-content textarea::placeholder {
-    font-size: 18px;
-  }
-  body footer .icons i {
-    font-size: 56px;
-  }
-}
-
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px) {
   body .section-1 .content .first-text {
