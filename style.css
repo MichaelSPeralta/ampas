@@ -1008,5 +1008,8 @@ COMO LA VISTA DE FIGMA.
   body .section-5 {
     font-size: 42px;
   }
+  body .section-5 img {
+    margin: 2em 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
