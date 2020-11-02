@@ -396,10 +396,10 @@ body .section-5 img {
   margin: 2em 1em;
 }
 
-body .section-5 #png-wrapper {
+/*body .section-5 #png-wrapper {
   background-color: #009b7b;
   padding: 0.3em;
-}
+}*/
 
 body .section-5 img:hover {
   -webkit-filter: grayscale(100%);
