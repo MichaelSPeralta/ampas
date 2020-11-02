@@ -190,6 +190,10 @@ body {
       .button {
         align-self: center;
         padding: 0.5em;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
       }
     }
   }
@@ -274,17 +278,22 @@ body {
     width: 100%;
     text-align: center;
     h2 {
-      // font-size: $font-Laptop * 1.5;
       margin: 2em 1em 0em 1em;
       text-align: start;
     }
     img {
       width: 20%;
       margin: 2em 1em;
-      filter: grayscale(100%);
+    }
+    #png-wrapper {
+      background-color: #009b7b;
+      padding: 0.3em;
     }
     img:hover {
-      filter: grayscale(0%);
+      filter: grayscale(100%);
+    }
+    img:focus {
+      outline: none;
     }
   }
 }
@@ -652,10 +661,9 @@ COMO LA VISTA DE FIGMA.
           display: inline;
           text-align: start;
           height: auto;
-          font-size: $font-Tablet - 12px;
+          font-size: $font-Tablet / 1.5;
           padding: 0 90px 0 0;
         }
-
         .control-nav {
           width: 150%;
           height: 100%;
@@ -812,83 +820,99 @@ COMO LA VISTA DE FIGMA.
         }
       }
     }
-  }
-}
-
-/* Extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1420px) {
-  body {
-    font-size: $font-Laptop;
-    .section-1 {
-      .content {
-        .first-text {
-          padding-right: 19%;
-          font-size: $font-Laptop * 2;
-        }
-        .call-to-action {
-          width: 100%;
+    .form {
+      .form-content {
+        input + span::before {
+          position: absolute;
+          left: 13.5rem;
+          top: -3.5rem;
           font-size: $font-Laptop;
-          .text {
-            padding: 0;
-            padding-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops) */
+  @media only screen and (min-width: 1420px) {
+    body {
+      font-size: $font-Laptop;
+      .section-1 {
+        .content {
+          .first-text {
+            padding-right: 19%;
+            font-size: $font-Laptop * 2;
+          }
+          .call-to-action {
+            width: 100%;
             font-size: $font-Laptop;
-          }
-          .button {
-            padding: 0em;
+            .text {
+              padding: 0;
+              padding-bottom: 1em;
+              font-size: $font-Laptop;
+            }
+            .button {
+              padding: 0em;
+            }
           }
         }
       }
-    }
-    .section-2 {
-      .image {
-        .text {
-          font-size: $font-Laptop * 1.5;
-          span {
+      .section-2 {
+        .image {
+          .text {
+            font-size: $font-Laptop * 1.5;
+            span {
+              font-size: $font-Laptop * 1.5;
+            }
+          }
+        }
+      }
+      .section-3 {
+        .image {
+          .text {
+            font-size: $font-Laptop * 1.5;
+            margin: 0;
+            width: 40%;
+            height: 30%;
+            span {
+              font-size: $font-Laptop * 1.5;
+            }
+          }
+        }
+      }
+      .section-4 {
+        font-size: $font-Laptop * 1.5;
+        .about-me {
+          p {
             font-size: $font-Laptop * 1.5;
           }
         }
       }
-    }
-    .section-3 {
-      .image {
-        .text {
-          font-size: $font-Laptop * 1.5;
-          margin: 0;
-          width: 40%;
-          height: 30%;
-          span {
+      .my-Form {
+        margin: 2em 11em;
+        .form {
+          .tit-form {
+            h3 {
+              font-size: $font-Laptop * 1.5;
+            }
+          }
+          .form-content {
+            input + span::before {
+              position: absolute;
+              left: 11rem;
+              top: -3.5rem;
+              font-size: $font-Laptop;
+            }
+          }
+          .form-content::placeholder {
             font-size: $font-Laptop * 1.5;
           }
         }
       }
-    }
-    .section-4 {
-      font-size: $font-Laptop * 1.5;
-      .about-me {
-        p {
-          font-size: $font-Laptop * 1.5;
+      .section-5 {
+        font-size: $font-Laptop * 1.5;
+        img {
+          margin: 2em 1em;
         }
-      }
-    }
-    .my-Form {
-      margin: 2em 11em;
-      .form {
-        .tit-form {
-          h3 {
-            font-size: $font-Laptop * 1.5;
-          }
-        }
-        .form-content {
-        }
-        .form-content::placeholder {
-          font-size: $font-Laptop * 1.5;
-        }
-      }
-    }
-    .section-5 {
-      font-size: $font-Laptop * 1.5;
-      img {
-        margin: 2em 1em;
       }
     }
   }

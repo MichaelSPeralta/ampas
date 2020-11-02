@@ -273,6 +273,11 @@ body .section-1 .call-to-action .button {
   padding: 0.5em;
 }
 
+body .section-1 .call-to-action .button a {
+  text-decoration: none;
+  color: #000;
+}
+
 body .section-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,13 +394,20 @@ body .section-5 h2 {
 body .section-5 img {
   width: 20%;
   margin: 2em 1em;
+}
+
+body .section-5 #png-wrapper {
+  background-color: #009b7b;
+  padding: 0.3em;
+}
+
+body .section-5 img:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-body .section-5 img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+body .section-5 img:focus {
+  outline: none;
 }
 
 .my-Form {
@@ -786,7 +798,7 @@ COMO LA VISTA DE FIGMA.
     display: inline;
     text-align: start;
     height: auto;
-    font-size: 12px;
+    font-size: 16px;
     padding: 0 90px 0 0;
   }
   body #myHeader .topnav .control-nav {
@@ -943,10 +955,16 @@ COMO LA VISTA DE FIGMA.
     width: 90%;
     text-align: center;
   }
+  body .form .form-content input + span::before {
+    position: absolute;
+    left: 13.5rem;
+    top: -3.5rem;
+    font-size: 28px;
+  }
+  /* Extra large devices (large laptops and desktops) */
 }
 
-/* Extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1420px) {
+@media only screen and (min-width: 1024px) and (min-width: 1420px) {
   body {
     font-size: 28px;
   }
@@ -992,6 +1010,12 @@ COMO LA VISTA DE FIGMA.
   }
   body .my-Form .form .tit-form h3 {
     font-size: 42px;
+  }
+  body .my-Form .form .form-content input + span::before {
+    position: absolute;
+    left: 11rem;
+    top: -3.5rem;
+    font-size: 28px;
   }
   body .my-Form .form .form-content::-webkit-input-placeholder {
     font-size: 42px;
