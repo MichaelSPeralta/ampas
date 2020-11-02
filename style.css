@@ -384,6 +384,10 @@ body .section-4 .about-me p {
 body .section-5 {
   width: 100%;
   text-align: center;
+  /*#png-wrapper {
+      background-color: #009b7b;
+      padding: 0.3em;
+    }*/
 }
 
 body .section-5 h2 {
@@ -395,11 +399,6 @@ body .section-5 img {
   width: 20%;
   margin: 2em 1em;
 }
-
-/*body .section-5 #png-wrapper {
-  background-color: #009b7b;
-  padding: 0.3em;
-}*/
 
 body .section-5 img:hover {
   -webkit-filter: grayscale(100%);
