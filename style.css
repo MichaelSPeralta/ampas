@@ -202,7 +202,7 @@ body .section-1 .image {
 }
 
 body .section-1 .image img {
-  width: 100%;
+  width: 1440px;
   height: auto;
 }
 
@@ -299,7 +299,8 @@ body .section-2 .image {
 }
 
 body .section-2 .image img {
-  width: 100%;
+  margin-left: 20px;
+  width: 1440px;
   height: auto;
 }
 
@@ -329,7 +330,7 @@ body .section-3 .image {
 }
 
 body .section-3 .image img {
-  width: 100%;
+  width: 1440px;
   height: auto;
 }
 
@@ -367,7 +368,7 @@ body .section-4 .image {
 
 body .section-4 .image img {
   opacity: 0.1;
-  width: 100%;
+  width: 1440px;
   height: auto;
 }
 
