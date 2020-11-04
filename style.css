@@ -288,7 +288,7 @@ body .section-2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1440px;
+  width: 100%;
   height: auto;
 }
 
@@ -299,7 +299,6 @@ body .section-2 .image {
 }
 
 body .section-2 .image img {
-  margin-left: 20px;
   width: 100%;
   height: auto;
 }

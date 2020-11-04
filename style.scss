@@ -202,12 +202,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     height: auto;
     .image {
       display: flex;
       img {
-        margin-left: 20px;
         width: 100%;
         height: auto;
       }
